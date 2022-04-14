@@ -15,4 +15,5 @@ python bot.py
 ```
 ## Dependencies
 The `string_dump.html` comes from AsteriskAmpersand's [Carian Archive](https://github.com/AsteriskAmpersand/Carian-Archive).
+
 The Python API used is [discord.py](https://github.com/Rapptz/discord.py)
