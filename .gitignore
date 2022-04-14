@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+!LICENSE
+!README.md
+
+!bot.py
+!.env
+!string_dump.html
