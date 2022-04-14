@@ -3,10 +3,12 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 
 ## Usage
 `!help` for the list of commands.
+
 `!item-desc <item>` to lookup the description of an item.
 
 ## Hosting
 1 - Set the `DISCORD_TOKEN` environment variable (in `.env`) to your token.
+
 2 - Run the python script.
 ```shell
 python bot.py
