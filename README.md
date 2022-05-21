@@ -11,6 +11,7 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 
 2 - Run the python script.
 ```shell
+cd source
 python bot.py
 ```
 ## Dependencies

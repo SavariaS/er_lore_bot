@@ -1,21 +1,7 @@
-# References
-# https://discordpy.readthedocs.io/en/stable/api.html#message
-# https://discordpy.readthedocs.io/en/stable/api.html#embed
-
 # Includes
 import os
 import discord
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
-
-# Globals
-client = discord.Client() # Client object
-
-help_embed = discord.Embed(title = 'Commands', description = '', type = 'rich')                           # Help message
-help_embed.add_field(name = '!help', value = 'Displays commands', inline = False)                         #
-help_embed.add_field(name = '!item-desc <item>', value = 'Displays an item description', inline = False); #
-
-error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000) # Error message
 
 # Function definitions
 
@@ -32,6 +18,8 @@ def simplify(string):
     # Replace french accents with ASCII character
     string = string.replace("é", "e")
     string = string.replace("è", "e")
+
+    string = string.replace("'s", "")
 
     return string
 
@@ -85,33 +73,19 @@ def find_keywords(keywords, names_file, descriptions_file, embed):
         
     return embed
 
-
-# @brief Callback when a message is sent in a channel the bot has access to
-# @param message The message (discord.py message)
-@client.event
-async def on_message(message):
-    # If the bot is the author of the message, ignore it
-    if message.author == client.user:
-        return
-
-    # If the !help command is entered, show help message
-    if((len(message.content) == 5 and message.content[:5] == '!help') or 
-        len(message.content) >= 6 and message.content[:6] == '!help '):
-        await message.channel.send(embed = help_embed)
-    
-    # If the !item-desc command is entered...
-    elif(len(message.content) >= 11 and message.content[:11] == '!item-desc '):
-        # Store all the arguments in a list (after simpliying them)
+async def find_item_description(message):
+    # Store all the arguments in a list (after simpliying them)
         keywords = simplify(message.content[11:]).split()
 
         # Create an embed for the item
         item_embed = discord.Embed(title = "NULL", type = "rich")
 
         # Find the item using the keywords
-        item_embed = find_keywords(keywords, "data/AccessoryNameStripped.fmg.xml", "data/AccessoryCaptionStripped.fmg.xml", item_embed)
-        item_embed = find_keywords(keywords, "data/ArtsNameStripped.fmg.xml",      "data/ArtsCaptionStripped.fmg.xml", item_embed)
-        item_embed = find_keywords(keywords, "data/GoodsNameStripped.fmg.xml",     "data/GoodsCaptionStripped.fmg.xml", item_embed)
-        item_embed = find_keywords(keywords, "data/WeaponNameStripped.fmg.xml",    "data/WeaponCaptionStripped.fmg.xml", item_embed)
+        item_embed = find_keywords(keywords, "../data/AccessoryNameStripped.xml", "../data/AccessoryCaptionStripped.xml", item_embed)
+        item_embed = find_keywords(keywords, "../data/ArtsNameStripped.xml",      "../data/ArtsCaptionStripped.xml", item_embed)
+        item_embed = find_keywords(keywords, "../data/GoodsNameStripped.xml",     "../data/GoodsCaptionStripped.xml", item_embed)
+        item_embed = find_keywords(keywords, "../data/ProtectorNameStripped.xml", "../data/ProtectorCaptionStripped.xml", item_embed)
+        item_embed = find_keywords(keywords, "../data/WeaponNameStripped.xml",    "../data/WeaponCaptionStripped.xml", item_embed)
 
         # If an item was found, show it
         if(item_embed.title != "NULL"):
@@ -119,23 +93,6 @@ async def on_message(message):
         
         # If no item was found, return an error message
         else:
+            error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
             error_embed.description = "No item matching '{arguments}' was found.".format(arguments = message.content[11:])
             await message.channel.send(embed = error_embed)
-
-    # If the command is unknown
-    elif(message.content[0] == "!"):
-        error_embed.description = "'{arguments}' : command not found.\nUse !help for a list of all commands.".format(arguments = message.content.split()[0])
-        await message.channel.send(embed = error_embed)
-
-
-
-# @brief Callback when the bot is connected and ready
-@client.event
-async def on_ready():
-    print("Ready.")
-
-# Main
-# Load token and start the bot
-load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
-client.run(TOKEN)

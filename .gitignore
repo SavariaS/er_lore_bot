@@ -4,6 +4,6 @@
 !LICENSE
 !README.md
 
-!bot.py
-!.env
+!config
 !data
+!source
