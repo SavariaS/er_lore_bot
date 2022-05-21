@@ -14,6 +14,8 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 python bot.py
 ```
 ## Dependencies
-The `string_dump.html` comes from AsteriskAmpersand's [Carian Archive](https://github.com/AsteriskAmpersand/Carian-Archive).
+The XML files come from AsteriskAmpersand's [Carian Archive](https://github.com/AsteriskAmpersand/Carian-Archive).
 
 The Python API used is [discord.py](https://github.com/Rapptz/discord.py)
+
+The XML parsed used is [BeautifulSoup4](https://github.com/wention/BeautifulSoup4)
