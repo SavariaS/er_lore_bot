@@ -96,5 +96,5 @@ def find_item_description(item):
         # If no item was found, return an error message
         else:
             error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
-            error_embed.description = "No item matching '{arguments}' was found.".format(arguments = message.content[11:])
+            error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
             return error_embed
