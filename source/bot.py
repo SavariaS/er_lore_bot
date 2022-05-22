@@ -9,7 +9,8 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 # Local imports
-import item_desc
+from item_desc import find_item_description
+from translate import translate
 
 # Globals
 client = discord.Client() # Client object
@@ -17,6 +18,7 @@ client = discord.Client() # Client object
 help_embed = discord.Embed(title = 'Commands', description = '', type = 'rich')                           # Help message
 help_embed.add_field(name = '!help', value = 'Displays commands', inline = False)                         #
 help_embed.add_field(name = '!item-desc <item>', value = 'Displays an item description', inline = False); #
+help_embed.add_field(name = '!translate <text>', value = 'Translates text to english', inline = False);   #
 
 # Function definitions
 
@@ -41,7 +43,15 @@ async def on_message(message):
     
     # If the !item-desc command is entered...
     elif(len(message.content) >= 11 and message.content[:11] == '!item-desc '):
-        await item_desc.find_item_description(message)
+        embed = find_item_description(message.content[11:])
+        await message.channel.send(embed = embed)
+        return
+    
+    # If the !translate command is entered
+    elif(len(message.content) >= 11 and message.content[:11] == "!translate "):
+        embed = discord.Embed(title = "Translation", type = "rich")
+        embed.description = translate("en", message.content[11:])
+        await message.channel.send(embed = embed)
         return
 
     # If the command is unknown
