@@ -8,6 +8,10 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 
 `!dialogue <lines>` to lookup a block of dialogue.
 
+`!item-desc-jp <item>` Same as !item-desc but uses the Japanese files instead.
+
+`!dialogue-jp <lines>` Same as !dialogue but uses the Japanese file instead.
+
 `!translate <text>` to translate a string.
 
 ## Hosting

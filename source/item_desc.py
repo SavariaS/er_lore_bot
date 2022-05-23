@@ -98,3 +98,31 @@ def find_item_description(item):
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
         error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
         return error_embed
+
+
+# @brief Finds the japanese description of an item.
+# @param item  The name of the item to search for. Used as keywords to facilitate the search
+# @return An embed to be displayed. The item's name and description if it was found, else an error message
+def find_item_description_jp(item):
+    # Store all the arguments in a list (after simpliying them)
+    keywords = simplify(item).split()
+
+    # Create an embed for the item
+    item_embed = discord.Embed(title = "NULL", type = "rich")
+
+    # Find the item using the keywords
+    item_embed = find_keywords(keywords, "../data/AccessoryNameStripped.xml", "../data/AccessoryCaptionStrippedJP.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/ArtsNameStripped.xml",      "../data/ArtsCaptionStrippedJP.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/GoodsNameStripped.xml",     "../data/GoodsCaptionStrippedJP.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/ProtectorNameStripped.xml", "../data/ProtectorCaptionStrippedJP.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/WeaponNameStripped.xml",    "../data/WeaponCaptionStrippedJP.xml", item_embed)
+
+    # If an item was found, return it
+    if(item_embed.title != "NULL"):
+        return item_embed
+    
+    # If no item was found, return an error message
+    else:
+        error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
+        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
+        return error_embed
