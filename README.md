@@ -6,6 +6,8 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 
 `!item-desc <item>` to lookup the description of an item.
 
+`!dialogue <lines>` to lookup a block of dialogue.
+
 `!translate <text>` to translate a string.
 
 ## Hosting

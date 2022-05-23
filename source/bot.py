@@ -10,15 +10,17 @@ from dotenv import load_dotenv
 
 # Local imports
 from item_desc import find_item_description
+from dialogue import find_dialogue
 from translate import translate
 
 # Globals
 client = discord.Client() # Client object
 
-help_embed = discord.Embed(title = 'Commands', description = '', type = 'rich')                           # Help message
-help_embed.add_field(name = '!help', value = 'Displays commands', inline = False)                         #
-help_embed.add_field(name = '!item-desc <item>', value = 'Displays an item description', inline = False); #
-help_embed.add_field(name = '!translate <text>', value = 'Translates text to english', inline = False);   #
+help_embed = discord.Embed(title = "Commands", description = "", type = "rich")                           # Help message
+help_embed.add_field(name = "!help", value = "Displays commands", inline = False)                         #
+help_embed.add_field(name = "!item-desc <item>", value = "Displays an item description", inline = False); #
+help_embed.add_field(name = "!dialogue <lines>", value = "Displays a block of dialogue", inline = False)
+help_embed.add_field(name = "!translate <text>", value = "Translates text to english", inline = False);   #
 
 # Function definitions
 
@@ -36,14 +38,20 @@ async def on_message(message):
         return
 
     # If the !help command is entered, show help message
-    if((len(message.content) == 5 and message.content[:5] == '!help') or 
-        len(message.content) >= 6 and message.content[:6] == '!help '):
+    if((len(message.content) == 5 and message.content[:5] == "!help") or 
+        len(message.content) >= 6 and message.content[:6] == "!help "):
         await message.channel.send(embed = help_embed)
         return
     
     # If the !item-desc command is entered...
-    elif(len(message.content) >= 11 and message.content[:11] == '!item-desc '):
+    elif(len(message.content) >= 11 and message.content[:11] == "!item-desc "):
         embed = find_item_description(message.content[11:])
+        await message.channel.send(embed = embed)
+        return
+
+    # If the !dialogue command is entered...
+    elif(len(message.content) >= 10 and message.content[:10] == "!dialogue "):
+        embed = find_dialogue(message.content[10:])
         await message.channel.send(embed = embed)
         return
     

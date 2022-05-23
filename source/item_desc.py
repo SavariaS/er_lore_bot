@@ -77,24 +77,24 @@ def find_keywords(keywords, names_file, descriptions_file, embed):
 # @return An embed to be displayed. The item's name and description if it was found, else an error message
 def find_item_description(item):
     # Store all the arguments in a list (after simpliying them)
-        keywords = simplify(item).split()
+    keywords = simplify(item).split()
 
-        # Create an embed for the item
-        item_embed = discord.Embed(title = "NULL", type = "rich")
+    # Create an embed for the item
+    item_embed = discord.Embed(title = "NULL", type = "rich")
 
-        # Find the item using the keywords
-        item_embed = find_keywords(keywords, "../data/AccessoryNameStripped.xml", "../data/AccessoryCaptionStripped.xml", item_embed)
-        item_embed = find_keywords(keywords, "../data/ArtsNameStripped.xml",      "../data/ArtsCaptionStripped.xml", item_embed)
-        item_embed = find_keywords(keywords, "../data/GoodsNameStripped.xml",     "../data/GoodsCaptionStripped.xml", item_embed)
-        item_embed = find_keywords(keywords, "../data/ProtectorNameStripped.xml", "../data/ProtectorCaptionStripped.xml", item_embed)
-        item_embed = find_keywords(keywords, "../data/WeaponNameStripped.xml",    "../data/WeaponCaptionStripped.xml", item_embed)
+    # Find the item using the keywords
+    item_embed = find_keywords(keywords, "../data/AccessoryNameStripped.xml", "../data/AccessoryCaptionStripped.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/ArtsNameStripped.xml",      "../data/ArtsCaptionStripped.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/GoodsNameStripped.xml",     "../data/GoodsCaptionStripped.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/ProtectorNameStripped.xml", "../data/ProtectorCaptionStripped.xml", item_embed)
+    item_embed = find_keywords(keywords, "../data/WeaponNameStripped.xml",    "../data/WeaponCaptionStripped.xml", item_embed)
 
-        # If an item was found, return it
-        if(item_embed.title != "NULL"):
-            return item_embed
-        
-        # If no item was found, return an error message
-        else:
-            error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
-            error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
-            return error_embed
+    # If an item was found, return it
+    if(item_embed.title != "NULL"):
+        return item_embed
+    
+    # If no item was found, return an error message
+    else:
+        error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
+        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
+        return error_embed
