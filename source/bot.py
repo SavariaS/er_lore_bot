@@ -49,8 +49,7 @@ async def on_message(message):
     
     # If the !translate command is entered
     elif(len(message.content) >= 11 and message.content[:11] == "!translate "):
-        embed = discord.Embed(title = "Translation", type = "rich")
-        embed.description = translate("en", message.content[11:])
+        embed = translate("en", message.content[11:])
         await message.channel.send(embed = embed)
         return
 

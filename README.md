@@ -11,7 +11,9 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 ## Hosting
 1 - Set the `DISCORD_TOKEN` environment variable (in `.env`) to your token.
 
-2 - Run the python script.
+2 - Set the `GOOGLE_API_KEY` environment variable (in `.env`) to your Google Cloud Translation API key (optional).
+
+3 - Run the python script.
 ```shell
 cd source
 python bot.py
@@ -21,4 +23,4 @@ The XML files come from AsteriskAmpersand's [Carian Archive](https://github.com/
 
 The Python API used is [discord.py](https://github.com/Rapptz/discord.py)
 
-The XML parsed used is [BeautifulSoup4](https://github.com/wention/BeautifulSoup4)
+The XML parser used is [BeautifulSoup4](https://github.com/wention/BeautifulSoup4)
