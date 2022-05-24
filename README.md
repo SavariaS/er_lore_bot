@@ -29,4 +29,6 @@ The XML files come from AsteriskAmpersand's [Carian Archive](https://github.com/
 
 The Python API used is [discord.py](https://github.com/Rapptz/discord.py)
 
-The XML parser used is [BeautifulSoup4](https://github.com/wention/BeautifulSoup4)
+The XML parser used is [BeautifulSoup4](https://github.com/wention/BeautifulSoup4) with [lxml](https://github.com/lxml/lxml)
+
+[python-dotenv](https://github.com/theskumar/python-dotenv) is also required.
