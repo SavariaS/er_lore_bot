@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 # Local imports
-from item_desc import find_item_description, find_item_description_jp
+from item_desc import find_item_by_name, find_item_by_description, find_item_by_name_jp
 from dialogue import find_dialogue, find_dialogue_jp
 from translate import translate
 
@@ -18,10 +18,11 @@ client = discord.Client() # Client object
 
 help_embed = discord.Embed(title = "Commands", description = "", type = "rich")                                          # Help message
 help_embed.add_field(name = "!help", value = "Displays commands", inline = False)                                        #
-help_embed.add_field(name = "!item-desc <item>", value = "Displays an item description", inline = False);                #
+help_embed.add_field(name = "!item-name <item>", value = "Finds an item by name", inline = False);                       #
+help_embed.add_field(name = "!item-desc <item>", value = "Finds an item by description", inline = False);                #
 help_embed.add_field(name = "!dialogue <lines>", value = "Displays a block of dialogue", inline = False)                 #
-help_embed.add_field(name = "!item-desc-jp <item>", value = "Displays an item description in japanese", inline = False); #
-help_embed.add_field(name = "!dialogue-jp <lines>", value = "Displays a block of dialogue in japanese", inline = False)  #
+help_embed.add_field(name = "!item-name-jp <item>", value = "Finds an item in Japanese by name", inline = False);        #
+help_embed.add_field(name = "!dialogue-jp <lines>", value = "Displays a block of dialogue in Japanese", inline = False)  #
 help_embed.add_field(name = "!translate <text>", value = "Translates text to english", inline = False);                  #
 
 # Function definitions
@@ -45,9 +46,15 @@ async def on_message(message):
         await message.channel.send(embed = help_embed)
         return
     
+    # If the !item-name command is entered...
+    elif(len(message.content) >= 11 and message.content[:11] == "!item-name "):
+        embed = find_item_by_name(message.content[11:])
+        await message.channel.send(embed = embed)
+        return
+    
     # If the !item-desc command is entered...
     elif(len(message.content) >= 11 and message.content[:11] == "!item-desc "):
-        embed = find_item_description(message.content[11:])
+        embed = find_item_by_description(message.content[11:])
         await message.channel.send(embed = embed)
         return
 
@@ -57,9 +64,9 @@ async def on_message(message):
         await message.channel.send(embed = embed)
         return
     
-    # If the !item-desc-jp command is entered
-    elif(len(message.content) >= 14 and message.content[:14] == "!item-desc-jp "):
-        embed = find_item_description_jp(message.content[14:])
+    # If the !item-name-jp command is entered
+    elif(len(message.content) >= 14 and message.content[:14] == "!item-name-jp "):
+        embed = find_item_by_name_jp(message.content[14:])
         await message.channel.send(embed = embed)
         return
     
