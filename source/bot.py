@@ -4,7 +4,10 @@
 
 # Library imports
 import os
+import signal
+
 import discord
+import asyncio
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
@@ -30,7 +33,18 @@ help_embed.add_field(name = "!translate <text>", value = "Translates text to eng
 # @brief Callback when the bot is connected and ready
 @client.event
 async def on_ready():
-    print("Ready.")
+    # Connect signal handlers
+    client.loop.add_signal_handler(getattr(signal, 'SIGINT'), lambda: asyncio.create_task(on_signal()))
+    client.loop.add_signal_handler(getattr(signal, 'SIGTERM'), lambda: asyncio.create_task(on_signal()))
+    print("Ready")
+
+# @brief Callback when the SGINT (Unix) and SIGTERM signals are caught
+async def on_signal():
+    # Go offline and stop the client
+    print("Shutting down")
+    await client.change_presence(status = discord.Status.offline)
+    await client.close()
+    asyncio.get_event_loop().stop()
 
 # @brief Callback when a message is sent in a channel the bot has access to
 # @param message The message (discord.py message)
@@ -91,6 +105,7 @@ async def on_message(message):
         return
 
 # Main
+
 # Load token and start the bot
 load_dotenv("../config/.env")
 TOKEN = os.getenv("DISCORD_TOKEN")
