@@ -4,11 +4,13 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 ## Usage
 `!help` for the list of commands.
 
-`!item-desc <item>` to lookup the description of an item.
+`!item-name <item>` to lookup an item by name.
+
+`!item-desc <item>` to lookup an item by description.
 
 `!dialogue <lines>` to lookup a block of dialogue.
 
-`!item-desc-jp <item>` Same as !item-desc but uses the Japanese files instead.
+`!item-name-jp <item>` Same as !item-name but uses the Japanese files instead.
 
 `!dialogue-jp <lines>` Same as !dialogue but uses the Japanese file instead.
 
@@ -24,6 +26,7 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 cd source
 python bot.py
 ```
+
 ## Dependencies
 The XML files come from AsteriskAmpersand's [Carian Archive](https://github.com/AsteriskAmpersand/Carian-Archive).
 
