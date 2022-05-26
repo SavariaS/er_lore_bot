@@ -2,16 +2,18 @@
 # https://discordpy.readthedocs.io/en/stable/api.html#message
 # https://discordpy.readthedocs.io/en/stable/api.html#embed
 
-# Library imports
+# Standard library imports
 import os
 import signal
 
+# Third party library imports
 import discord
 import asyncio
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 # Local imports
+from utils import path
 from item_desc import find_item_by_name, find_item_by_description, find_item_by_name_jp
 from dialogue import find_dialogue, find_dialogue_jp
 from translate import translate
@@ -107,6 +109,6 @@ async def on_message(message):
 # Main
 
 # Load token and start the bot
-load_dotenv("../config/.env")
+load_dotenv(path("../config/.env"))
 TOKEN = os.getenv("DISCORD_TOKEN")
 client.run(TOKEN)

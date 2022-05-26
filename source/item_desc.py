@@ -1,42 +1,11 @@
-# Includes
+# Third party library imports
 import discord
 from bs4 import BeautifulSoup
 
+# Local imports
+from utils import path, simplify, contains_keywords
+
 # Function definitions
-
-# @brief Simplifies a string by converting it to lowercase, removing undiserable characters and replacing french accents with the english alphabet
-# @param string The string to modify
-# @return The simplified string
-def simplify(string):
-    # Converts all characters to lowercase
-    string = string.lower()
-
-    # Remove characters
-    string = string.translate(str.maketrans('', '', '.,:()'))
-
-    # Replace french accents with ASCII character
-    string = string.replace("é", "e")
-    string = string.replace("è", "e")
-
-    string = string.replace("'s", "")
-
-    return string
-
-# @brief Checks if ALL keywords are present in a line
-# @param line     A string containing the line (name of an item)
-#        keywords A list of keywords to look for
-# @return True if ALL the keywords were found in the line, false otherwise
-def contains_keywords(line, keywords):
-    # Store the words of the line in a list
-    words = line.split()
-
-    # If a keyword is missing from the line, return false
-    for word in keywords:
-        if((word in words) == False):
-            return False
-    
-    # Else, return true
-    return True
 
 # @brief Finds the item in a file using the keywords. If the item is found, return the data found in both files
 # @param keywords     A list of keywords to look for
@@ -48,7 +17,7 @@ def find_keywords(keywords, src_file, lookup_file, data):
     # If the item has not been found yet
     if(data[0] == "NULL"):
         # Parse the first file
-        src_fd = open(src_file)
+        src_fd = open(path(src_file))
         src_soup = BeautifulSoup(src_fd, "xml")
         entries = src_soup.find("entries")
 
@@ -57,7 +26,7 @@ def find_keywords(keywords, src_file, lookup_file, data):
                 # If the entry contains the keywords
                 if(contains_keywords(simplify(tag.text), keywords)):
                     # Parse the second file and find the corresponding id
-                    lookup_fd = open(lookup_file)
+                    lookup_fd = open(path(lookup_file))
                     lookup_soup = BeautifulSoup(lookup_fd, "xml")
                     match = lookup_soup.find(attrs = {"id" : tag["id"]})
 

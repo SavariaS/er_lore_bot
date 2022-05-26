@@ -1,41 +1,11 @@
 # Includes
-import os
+import discord
+# Third party library imports
 import discord
 from bs4 import BeautifulSoup
 
-# @brief Simplifies a string by converting it to lowercase, removing undiserable characters and replacing french accents with the english alphabet
-# @param string The string to modify
-# @return The simplified string
-def simplify(string):
-    # Converts all characters to lowercase
-    string = string.lower()
-
-    # Remove characters
-    string = string.translate(str.maketrans('', '', '.,:()'))
-
-    # Replace french accents with ASCII character
-    string = string.replace("é", "e")
-    string = string.replace("è", "e")
-
-    string = string.replace("'s", "")
-
-    return string
-
-# @brief Checks if ALL keywords are present in a line
-# @param line     A string containing the line (name of an item)
-#        keywords A list of keywords to look for
-# @return True if ALL the keywords were found in the line, false otherwise
-def contains_keywords(line, keywords):
-    # Store the words of the line in a list
-    words = line.split()
-
-    # If a keyword is missing from the line, return false
-    for word in keywords:
-        if((word in words) == False):
-            return False
-    
-    # Else, return true
-    return True
+# Local imports
+from utils import path, simplify, contains_keywords
 
 # @brief Finds a block of dialogue from keywords.
 # @param dialogue Keywords to look for.
@@ -45,7 +15,7 @@ def find_dialogue(dialogue):
     keywords = simplify(dialogue).split()
 
     # Open the dialogues file and prase it
-    dialogues_fd = open("../data/TalkMsgStripped.xml")
+    dialogues_fd = open(path("../data/TalkMsgStripped.xml"))
     dialogues_soup = BeautifulSoup(dialogues_fd, "xml")
     entries = dialogues_soup.find("entries")
 
@@ -69,7 +39,7 @@ def find_dialogue(dialogue):
             # If the dialogue was found, return it
             if(contains_keywords(simplify(text), keywords)):
                 # Get the author
-                author_fd = open("../data/TalkAuthor.xml")
+                author_fd = open(path("../data/TalkAuthor.xml"))
                 author_soup = BeautifulSoup(author_fd, "xml")
                 author = author_soup.find(attrs = {"id" : str(section)})
 
@@ -101,7 +71,7 @@ def find_dialogue_jp(dialogue):
     keywords = simplify(dialogue).split()
 
     # Open the dialogues file and prase it
-    dialogues_fd = open("../data/TalkMsgStripped.xml")
+    dialogues_fd = open(path("../data/TalkMsgStripped.xml"))
     dialogues_soup = BeautifulSoup(dialogues_fd, "xml")
     entries = dialogues_soup.find("entries")
 
@@ -125,12 +95,12 @@ def find_dialogue_jp(dialogue):
             # If the dialogue was found, return it
             if(contains_keywords(simplify(text), keywords)):
                 # Get the author
-                author_fd = open("../data/TalkAuthor.xml")
+                author_fd = open(path("../data/TalkAuthor.xml"))
                 author_soup = BeautifulSoup(author_fd, "xml")
                 author = author_soup.find(attrs = {"id" : str(section)})
 
                 # Get the japanese version
-                japanese_fd = open("../data/TalkMsgStrippedJP.xml")
+                japanese_fd = open(path("../data/TalkMsgStrippedJP.xml"))
                 japanese_soup = BeautifulSoup(japanese_fd, "xml")
                 start = japanese_soup.find(attrs = {"id" : str(section)})
 
