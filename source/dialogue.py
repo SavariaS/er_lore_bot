@@ -54,11 +54,7 @@ def find_dialogue(dialogue):
     text = "" 
 
     # For each entry
-    for tag in entries.contents:
-        # Ignore empty tags (find better solution)
-        if(len(tag.text) == 1):
-            continue
-
+    for tag in entries.find_all("text"):
         # Get the tag's id
         id = int(tag["id"])
 
@@ -114,11 +110,7 @@ def find_dialogue_jp(dialogue):
     text = "" 
 
     # For each entry
-    for tag in entries.contents:
-        # Ignore empty tags (find better solution)
-        if(len(tag.text) == 1):
-            continue
-
+    for tag in entries.find_all("text"):
         # Get the tag's id
         id = int(tag["id"])
 
@@ -143,23 +135,14 @@ def find_dialogue_jp(dialogue):
                 start = japanese_soup.find(attrs = {"id" : str(section)})
 
                 jp_text = ""
-                while True:
-                    # Ignore it (Bad)
-                    if(len(start.text) == 1):
-                        start = start.next_sibling
-                        continue
+                jp_id = int(start["id"])
 
-                    jp_id = int(start["id"])
-
-                    # If the tag belongs to the same section, add it to the text and continue
-                    if((section < 10000 and ((jp_id - (jp_id % 100)) == section)) or
+                # For each tag in the same section
+                while ((section < 10000 and ((jp_id - (jp_id % 100)) == section)) or
                        (section >= 10000 and ((jp_id - (jp_id % 1000)) == section))):
-                        jp_text += start.text + "\n"
-                        start = start.next_sibling
-                        continue
-                    # If it's a new section, exit the loop
-                    else:
-                        break
+                    jp_text += start.text + "\n"
+                    start = start.find_next_sibling("text")
+                    jp_id = int(start["id"])
                 
                 # Construct the embed
                 if author is None:

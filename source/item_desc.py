@@ -53,7 +53,7 @@ def find_keywords(keywords, src_file, lookup_file, data):
         entries = src_soup.find("entries")
 
         # For each entry in the file
-        for tag in entries.contents:
+        for tag in entries.find_all("text"):
                 # If the entry contains the keywords
                 if(contains_keywords(simplify(tag.text), keywords)):
                     # Parse the second file and find the corresponding id
