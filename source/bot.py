@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 
 # Local imports
 from utils import path
+from help import help
 from item_desc import find_item_by_name, find_item_by_description, find_item_by_name_jp
 from dialogue import find_dialogue, find_dialogue_jp
 from translate import translate
@@ -21,23 +22,14 @@ from translate import translate
 # Globals
 client = discord.Client() # Client object
 
-help_embed = discord.Embed(title = "Commands", description = "", type = "rich")                                          # Help message
-help_embed.add_field(name = "!help", value = "Displays commands", inline = False)                                        #
-help_embed.add_field(name = "!item-name <item>", value = "Finds an item by name", inline = False);                       #
-help_embed.add_field(name = "!item-desc <item>", value = "Finds an item by description", inline = False);                #
-help_embed.add_field(name = "!dialogue <lines>", value = "Displays a block of dialogue", inline = False)                 #
-help_embed.add_field(name = "!item-name-jp <item>", value = "Finds an item in Japanese by name", inline = False);        #
-help_embed.add_field(name = "!dialogue-jp <lines>", value = "Displays a block of dialogue in Japanese", inline = False)  #
-help_embed.add_field(name = "!translate <text>", value = "Translates text to english", inline = False);                  #
-
 # Function definitions
 
 # @brief Callback when the bot is connected and ready
 @client.event
 async def on_ready():
     # Connect signal handlers
-    client.loop.add_signal_handler(getattr(signal, 'SIGINT'), lambda: asyncio.create_task(on_signal()))
-    client.loop.add_signal_handler(getattr(signal, 'SIGTERM'), lambda: asyncio.create_task(on_signal()))
+    client.loop.add_signal_handler(getattr(signal, "SIGINT"), lambda: asyncio.create_task(on_signal()))
+    client.loop.add_signal_handler(getattr(signal, "SIGTERM"), lambda: asyncio.create_task(on_signal()))
     print("Ready")
 
 # @brief Callback when the SGINT (Unix) and SIGTERM signals are caught
@@ -57,9 +49,9 @@ async def on_message(message):
         return
 
     # If the !help command is entered, show help message
-    if((len(message.content) == 5 and message.content[:5] == "!help") or 
-        len(message.content) >= 6 and message.content[:6] == "!help "):
-        await message.channel.send(embed = help_embed)
+    if(len(message.content) >= 5 and message.content[:5] == "!help"):
+        embed = help(message.content[5:])
+        await message.channel.send(embed = embed)
         return
     
     # If the !item-name command is entered...

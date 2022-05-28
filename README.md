@@ -2,19 +2,21 @@
 This is a [Discord](https://discord.com/) bot that brings up Elden Ring item descriptions on demand. Contributions of any kind (new features, code improvements, more resources or improvements to the repository) are welcome.
 
 ## Usage
-`!help` for the list of commands.
+`!help` Displays the list of all commands.
 
-`!item-name <item>` to lookup an item by name.
+`!help <command>` Displays information about a command.
 
-`!item-desc <item>` to lookup an item by description.
+`!item-name <name>` Finds an item by its name.
 
-`!dialogue <lines>` to lookup a block of dialogue.
+`!item-desc <description>` Finds an item by its description.
 
-`!item-name-jp <item>` Same as !item-name but uses the Japanese files instead.
+`!dialogue <lines>` Finds a block of dialogue.
 
-`!dialogue-jp <lines>` Same as !dialogue but uses the Japanese file instead.
+`!item-name-jp <name>` Finds an item in Japanese by name.
 
-`!translate <text>` to translate a string.
+`!dialogue-jp <lines>` Finds a block of dialogue in Japanese.
+
+`!translate <text>` Translates text to English.
 
 ## Hosting
 1 - Set the `DISCORD_TOKEN` environment variable (in `.env`) to your token.
@@ -28,6 +30,8 @@ python bot.py
 ```
 
 ## Dependencies
+Tested with Python 3.8 and above.
+
 The XML files come from AsteriskAmpersand's [Carian Archive](https://github.com/AsteriskAmpersand/Carian-Archive).
 
 The Python API used is [discord.py](https://github.com/Rapptz/discord.py)
