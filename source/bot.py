@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 # Local imports
 from utils import path
 from help import help
+from tag import show_tags
 from item_desc import find_item_by_name, find_item_by_description, find_item_by_name_jp
 from dialogue import find_dialogue, find_dialogue_jp
 from translate import translate
@@ -51,6 +52,12 @@ async def on_message(message):
     # If the !help command is entered, show help message
     if(len(message.content) >= 5 and message.content[:5] == "!help"):
         embed = help(message.content[5:])
+        await message.channel.send(embed = embed)
+        return
+    
+    # If the !tags command is entered, show all tags
+    if(len(message.content) >= 5 and message.content[:5] == "!tags"):
+        embed = show_tags()
         await message.channel.send(embed = embed)
         return
     

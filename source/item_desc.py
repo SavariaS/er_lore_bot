@@ -7,6 +7,42 @@ from utils import path, simplify, contains_keywords
 
 # Function definitions
 
+# @brief Generates the path to a data file
+# @param name            The beginning of the name of the file
+#        is_description  True if it's a file containing descriptions, False if it's a file containing names
+#        is_japanese     True if it's a japanese file, False if not
+# @return The path to the file
+def file_path(name, is_description, is_japanese):
+    path = "../data/"
+    path += name
+    path += "Caption" if is_description else "Name"
+    path += "Stripped"
+    path += "JP" if is_japanese else ""
+    path += ".xml"
+
+    return path
+
+# @brief Generates a list of files from the tags
+# @param tags                  A list of tags
+#        is_description_first  True if the descriptions file should be first, False if not
+#        is_japanese           True if description should be in japanese
+# @return A list of files to search through
+def get_files_list(tags, is_description_first, is_japanese):
+    files_list = []
+
+    if(not tags or "talisman" in tags):
+        files_list.append([file_path("Accessory", is_description_first, False), file_path("Accessory", not is_description_first, is_japanese)])
+    if(not tags or "sorcery" in tags):
+        files_list.append([file_path("Arts", is_description_first, False), file_path("Arts", not is_description_first, is_japanese)])
+    if(not tags or "armor" in tags):
+        files_list.append([file_path("Protector", is_description_first, False), file_path("Protector", not is_description_first, is_japanese)])
+    if(not tags or "weapon" in tags or "catalyst" in tags or "shield" in tags or "ammunition" in tags):
+        files_list.append([file_path("Weapon", is_description_first, False), file_path("Weapon", not is_description_first, is_japanese)])
+    if(not tags or "incantation" in tags or "key" in tags or "upgrade" in tags or "consumable" in tags):
+        files_list.append([file_path("Goods", is_description_first, False), file_path("Goods", not is_description_first, is_japanese)])
+
+    return files_list
+
 # @brief Finds the item in a file using the keywords. If the item is found, return the data found in both files
 # @param keywords     A list of keywords to look for
 #        src_file     A string containing the location of a XML file. One of the entries of that file must match the keywords
@@ -39,19 +75,36 @@ def find_keywords(keywords, src_file, lookup_file, data):
         
     return data
 
-def find_item_by_description(item):
-    # Store all the arguments in a list (after simpliying them)
-    keywords = simplify(item).split()
 
-    # Create an array to hold the item data
+# @brief Finds the description of an item.
+# @param args  The description of the item to search for. Used as keywords to facilitate the search
+# @return An embed to be displayed. The item's name and description if it was found, else an error message
+def find_item_by_description(args):
+    # Local variables
+    tags = []
+    keywords = []
+
+    # If there is a delimiter...
+    if(args.find(":") != -1):
+        # Separate the string and store the tags and keywords in lists
+        tags = simplify(args.split(':')[0]).split()
+        keywords = simplify(args.split(':')[1]).split()
+    else:
+        # Ignore tags
+        tags = []
+        keywords = simplify(args).split()
+    
+    # Get the list of files from the tags
+    file_list = get_files_list(tags, is_description_first = True, is_japanese = False)
+
+    # Search for the item in the files
     item_data = ["NULL", "NULL"]
+    for files in file_list:
+        item_embed = find_keywords(keywords, files[0], files[1], item_data)
 
-    # Find the item using the keywords
-    item_embed = find_keywords(keywords, "../data/AccessoryCaptionStripped.xml", "../data/AccessoryNameStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/ArtsCaptionStripped.xml",      "../data/ArtsNameStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/GoodsCaptionStripped.xml",     "../data/GoodsNameStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/ProtectorCaptionStripped.xml", "../data/ProtectorNameStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/WeaponCaptionStripped.xml",    "../data/WeaponNameStripped.xml", item_data)
+        # If the item was found, stop searching
+        if(item_embed[0] != "NULL"):
+            break
 
     # If an item was found, return it
     if(item_data[0] != "NULL"):
@@ -63,25 +116,38 @@ def find_item_by_description(item):
     # If no item was found, return an error message
     else:
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
-        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
+        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = args)
         return error_embed
 
-# @brief Finds the description of an item.
-# @param item  The name of the item to search for. Used as keywords to facilitate the search
+# @brief Finds the description of an item by its name.
+# @param args  The name of the item to search for. Used as keywords to facilitate the search
 # @return An embed to be displayed. The item's name and description if it was found, else an error message
-def find_item_by_name(item):
-    # Store all the arguments in a list (after simpliying them)
-    keywords = simplify(item).split()
+def find_item_by_name(args):
+    # Local variables
+    tags = []
+    keywords = []
 
-    # Create an array to hold the item data
+    # If there is a delimiter...
+    if(args.find(":") != -1):
+        # Separate the string and store the tags and keywords in lists
+        tags = simplify(args.split(':')[0]).split()
+        keywords = simplify(args.split(':')[1]).split()
+    else:
+        # Ignore tags
+        tags = []
+        keywords = simplify(args).split()
+    
+    # Get the list of files from the tags
+    file_list = get_files_list(tags, is_description_first = False, is_japanese = False)
+
+    # Search for the item in the files
     item_data = ["NULL", "NULL"]
+    for files in file_list:
+        item_embed = find_keywords(keywords, files[0], files[1], item_data)
 
-    # Find the item using the keywords
-    item_embed = find_keywords(keywords, "../data/AccessoryNameStripped.xml", "../data/AccessoryCaptionStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/ArtsNameStripped.xml",      "../data/ArtsCaptionStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/GoodsNameStripped.xml",     "../data/GoodsCaptionStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/ProtectorNameStripped.xml", "../data/ProtectorCaptionStripped.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/WeaponNameStripped.xml",    "../data/WeaponCaptionStripped.xml", item_data)
+        # If the item was found, stop searching
+        if(item_embed[0] != "NULL"):
+            break
 
     # If an item was found, return it
     if(item_data[0] != "NULL"):
@@ -93,26 +159,39 @@ def find_item_by_name(item):
     # If no item was found, return an error message
     else:
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
-        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
+        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = args)
         return error_embed
 
 
-# @brief Finds the japanese description of an item.
-# @param item  The name of the item to search for. Used as keywords to facilitate the search
+# @brief Finds the japanese description of an item by its name.
+# @param args  The name of the item to search for. Used as keywords to facilitate the search
 # @return An embed to be displayed. The item's name and description if it was found, else an error message
-def find_item_by_name_jp(item):
-    # Store all the arguments in a list (after simpliying them)
-    keywords = simplify(item).split()
+def find_item_by_name_jp(args):
+    # Local variables
+    tags = []
+    keywords = []
 
-    # Create an array to hold the item data
+    # If there is a delimiter...
+    if(args.find(":") != -1):
+        # Separate the string and store the tags and keywords in lists
+        tags = simplify(args.split(':')[0]).split()
+        keywords = simplify(args.split(':')[1]).split()
+    else:
+        # Ignore tags
+        tags = []
+        keywords = simplify(args).split()
+    
+    # Get the list of files from the tags
+    file_list = get_files_list(tags, is_description_first = False, is_japanese = True)
+
+    # Search for the item in the files
     item_data = ["NULL", "NULL"]
+    for files in file_list:
+        item_embed = find_keywords(keywords, files[0], files[1], item_data)
 
-    # Find the item using the keywords
-    item_embed = find_keywords(keywords, "../data/AccessoryNameStripped.xml", "../data/AccessoryCaptionStrippedJP.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/ArtsNameStripped.xml",      "../data/ArtsCaptionStrippedJP.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/GoodsNameStripped.xml",     "../data/GoodsCaptionStrippedJP.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/ProtectorNameStripped.xml", "../data/ProtectorCaptionStrippedJP.xml", item_data)
-    item_embed = find_keywords(keywords, "../data/WeaponNameStripped.xml",    "../data/WeaponCaptionStrippedJP.xml", item_data)
+        # If the item was found, stop searching
+        if(item_embed[0] != "NULL"):
+            break
 
     # If an item was found, return it
     if(item_data[0] != "NULL"):
@@ -124,5 +203,5 @@ def find_item_by_name_jp(item):
     # If no item was found, return an error message
     else:
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
-        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = item)
+        error_embed.description = "No item matching '{arguments}' was found.".format(arguments = args)
         return error_embed

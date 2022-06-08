@@ -6,11 +6,12 @@ import discord
 def show_help():
     help_embed = discord.Embed(title = "Commands", description = "", type = "rich")                                  
     help_embed.add_field(name = "!help", value = "Displays the list of all commands.", inline = False)                                        
-    help_embed.add_field(name = "!help <command>", value = "Displays information about a command.", inline = False) 
-    help_embed.add_field(name = "!item-name <name>", value = "Finds an item by its name.", inline = False);                       
-    help_embed.add_field(name = "!item-desc <description>", value = "Finds an item by its description.", inline = False);                
+    help_embed.add_field(name = "!help <command>", value = "Displays information about a command.", inline = False)
+    help_embed.add_field(name = "!tags", value = "Displays the list of all tags.", inline = False)  
+    help_embed.add_field(name = "!item-name <tags> : <name>", value = "Finds an item by its name.", inline = False)                       
+    help_embed.add_field(name = "!item-desc <tags> : <description>", value = "Finds an item by its description.", inline = False)              
     help_embed.add_field(name = "!dialogue <lines>", value = "Finds a block of dialogue.", inline = False)                 
-    help_embed.add_field(name = "!item-name-jp <name>", value = "Finds an item in Japanese by name.", inline = False);        
+    help_embed.add_field(name = "!item-name-jp <tags> : <name>", value = "Finds an item in Japanese by name.", inline = False);        
     help_embed.add_field(name = "!dialogue-jp <lines>", value = "Finds a block of dialogue in Japanese.", inline = False)  
     help_embed.add_field(name = "!translate <text>", value = "Translates text to English.", inline = False)
 
@@ -24,22 +25,31 @@ def show_help_command():
     help_embed.add_field(name = "Example:", value = "!help item-desc", inline = False)
 
     return help_embed
+# @brief Constructs and returns an embed containing information about the !tags command
+# @return The embed
+
+def show_tags():
+    help_embed = discord.Embed(title = "!tags", description = "Displays the list of all tags.", type = "rich")
+
+    return help_embed
 
 # @brief Constructs and returns an embed containing information about the !item-name command
 # @return The embed
 def show_item_name():
-    help_embed = discord.Embed(title = "!item-name <name>", description = "Finds an item by its name.", type = "rich")
+    help_embed = discord.Embed(title = "!item-name <tags> : <name>", description = "Finds an item by its name.", type = "rich")
+    help_embed.add_field(name = "<tags> (Optional)", value = "Tags associated with the item.", inline = False)
     help_embed.add_field(name = "<name>", value = "Keywords to be found in the item's name.", inline = False)
-    help_embed.add_field(name = "Example:", value = "!item-name map snowfield", inline = False)
+    help_embed.add_field(name = "Example:", value = "!item-name key : map snowfield", inline = False)
 
     return help_embed
 
 # @brief Constructs and returns an embed containing information about the !item-desc command
 # @return The embed
 def show_item_desc():
-    help_embed = discord.Embed(title = "!item-desc <description>", description = "Finds an item by its description.", type = "rich")
+    help_embed = discord.Embed(title = "!item-desc <tags> : <description>", description = "Finds an item by its description.", type = "rich")
+    help_embed.add_field(name = "<tags> (Optional)", value = "Tags associated with the item.", inline = False)
     help_embed.add_field(name = "<description>", value = "Keywords to be found in the item's description.", inline = False)
-    help_embed.add_field(name = "Example:", value = "!item-desc malenia true goddess", inline = False)
+    help_embed.add_field(name = "Example:", value = "!item-desc incantation : malenia true goddess", inline = False)
 
     return help_embed
 
@@ -55,7 +65,8 @@ def show_dialogue():
 # @brief Constructs and returns an embed containing information about the !item-name-jp command
 # @return The embed
 def show_item_name_jp():
-    help_embed = discord.Embed(title = "!item-name-jp <name>", description = "Finds an item in Japanese by its name.", type = "rich")
+    help_embed = discord.Embed(title = "!item-name-jp <tags> : <name>", description = "Finds an item in Japanese by its name.", type = "rich")
+    help_embed.add_field(name = "<tags> (Optional)", value = "Tags associated with the item.", inline = False)
     help_embed.add_field(name = "<name>", value = "English keywords to be found in the item's name.", inline = False)
     help_embed.add_field(name = "Example:", value = "!item-name-jp scarlet aeonia", inline = False)
 
@@ -96,6 +107,8 @@ def help(args):
             return show_help_command()
         elif(command == "item-name" or command == "!item-name"):
             return show_item_name()
+        elif(command == "tags" or command == "!tags"):
+            return show_tags()
         elif(command == "item-desc" or command == "!item-desc"):
             return show_item_desc()
         elif(command == "dialogue" or command == "!dialogue"):
