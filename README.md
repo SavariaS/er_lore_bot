@@ -6,6 +6,8 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 
 `!help <command>` Displays information about a command.
 
+`!tags` Displays the list of all tags.
+
 `!item-name <name>` Finds an item by its name.
 
 `!item-desc <description>` Finds an item by its description.
