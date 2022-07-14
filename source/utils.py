@@ -38,7 +38,16 @@ def contains_keywords(line, keywords):
 
     # If a keyword is missing from the line, return false
     for word in keywords:
-        if((word in words) == False):
+        alternative = ""
+        # If the keyword is plural, get the singular variant
+        if(word[-1] == "s"):
+            alternative = word[:-1]
+        # If the keyword is singular, get the plural variant
+        else:
+            alternative = word + "s"
+
+        # If either form is missing...
+        if((word in words) == False and (alternative in words) == False):
             return False
     
     # Else, return true
