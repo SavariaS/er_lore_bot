@@ -47,6 +47,7 @@
 <text id="3070000">Alabaster Lord's Sword</text>
 <text id="3080000">Banished Knight's Greatsword</text>
 <text id="3090000">Dark Moon Greatsword</text>
+<text id="3100000">Sacred Relic Sword</text>
 <text id="3130000">Helphen's Steeple</text>
 <text id="3140000">Blasphemous Blade</text>
 <text id="3150000">Marais Executioner's Sword</text>
@@ -74,6 +75,7 @@
 <text id="5040000">Antspur Rapier</text>
 <text id="5050000">Frozen Needle</text>
 <text id="5060000">Noble's Estoc</text>
+<text id="6000000">Bloody Helice</text>
 <text id="6010000">Godskin Stitcher</text>
 <text id="6020000">Great Épée</text>
 <text id="6040000">Dragon King's Cragblade</text>
@@ -87,12 +89,6 @@
 <text id="7070000">Wing of Astel</text>
 <text id="7080000">Scavenger's Curved Sword</text>
 <text id="7090000">Sharktooth Curved Sword</text>
-<text id="7090200">Sharp Sharktooth Curved Sword</text>
-<text id="7090400">Flame Sharktooth Curved Sword</text>
-<text id="7090500">Pyromancy Sharktooth Curved Sword</text>
-<text id="7090700">Blessed Sharktooth Curved Sword</text>
-<text id="7090900">Frost Sharktooth Curved Sword</text>
-<text id="7091200">Arcane Sharktooth Curved Sword</text>
 <text id="7100000">Eclipse Shotel</text>
 <text id="7110000">Serpent-God's Curved Sword</text>
 <text id="7120000">Mantis Blade</text>
@@ -100,6 +96,7 @@
 <text id="7150000">Grossmesser</text>
 <text id="8010000">Onyx Lord's Greatsword</text>
 <text id="8020000">Dismounter</text>
+<text id="8030000">Bloodhound's Fang</text>
 <text id="8040000">Magma Wyrm's Scalesword</text>
 <text id="8050000">Zamor Curved Sword</text>
 <text id="8060000">Omen Cleaver</text>
@@ -111,6 +108,7 @@
 <text id="9010000">Nagakiba</text>
 <text id="9020000">Hand of Malenia</text>
 <text id="9030000">Meteoric Ore Blade</text>
+<text id="9040000">Rivers of Blood</text>
 <text id="9060000">Moonveil</text>
 <text id="9070000">Dragonscale Blade</text>
 <text id="9080000">Serpentbone Blade</text>
@@ -169,12 +167,6 @@
 <text id="14110000">Sacrificial Axe</text>
 <text id="14120000">Rosus' Axe</text>
 <text id="14130000">Burial Axe</text>
-<text id="14130200">Sharp Burial Axe</text>
-<text id="14130400">Flame Burial Axe</text>
-<text id="14130500">Pyromancy Burial Axe</text>
-<text id="14130700">Blessed Burial Axe</text>
-<text id="14130900">Frost Burial Axe</text>
-<text id="14131200">Arcane Burial Axe</text>
 <text id="14140000">Stormhawk Axe</text>
 <text id="15000000">Greataxe</text>
 <text id="15010000">Warped Axe</text>
@@ -204,6 +196,7 @@
 <text id="16140000">Spiked Spear</text>
 <text id="16150000">Iron Spear</text>
 <text id="16160000">Rotten Crystal Spear</text>
+<text id="17010000">Mohgwyn's Sacred Spear</text>
 <text id="17020000">Siluria's Tree</text>
 <text id="17030000">Serpent-Hunter</text>
 <text id="17050000">Vyke's War Spear</text>

@@ -12,10 +12,10 @@ from utils import path, simplify, contains_keywords
 #        is_description  True if it's a file containing descriptions, False if it's a file containing names
 #        is_japanese     True if it's a japanese file, False if not
 # @return The path to the file
-def file_path(name, is_description, is_japanese):
+def file_path(name, is_description, is_tags, is_japanese):
     path = "../data/"
     path += name
-    path += "Caption" if is_description else "Name"
+    path += "Caption" if is_description else "Tags" if is_tags else "Name"
     path += "Stripped"
     path += "JP" if is_japanese else ""
     path += ".xml"
@@ -31,15 +31,13 @@ def get_files_list(tags, is_description_first, is_japanese):
     files_list = []
 
     if(not tags or "talisman" in tags):
-        files_list.append([file_path("Accessory", is_description_first, False), file_path("Accessory", not is_description_first, is_japanese)])
-    if(not tags or "sorcery" in tags):
-        files_list.append([file_path("Arts", is_description_first, False), file_path("Arts", not is_description_first, is_japanese)])
+        files_list.append([file_path("Accessory", is_description_first, False, False), file_path("Accessory", not is_description_first, False, is_japanese), file_path("Accessory", False, True, False)])
     if(not tags or "armor" in tags):
-        files_list.append([file_path("Protector", is_description_first, False), file_path("Protector", not is_description_first, is_japanese)])
+        files_list.append([file_path("Protector", is_description_first, False, False), file_path("Protector", not is_description_first, False, is_japanese), file_path("Protector", False, True, False)])
     if(not tags or "weapon" in tags or "catalyst" in tags or "shield" in tags or "ammunition" in tags):
-        files_list.append([file_path("Weapon", is_description_first, False), file_path("Weapon", not is_description_first, is_japanese)])
-    if(not tags or "incantation" in tags or "key" in tags or "upgrade" in tags or "consumable" in tags):
-        files_list.append([file_path("Goods", is_description_first, False), file_path("Goods", not is_description_first, is_japanese)])
+        files_list.append([file_path("Weapon", is_description_first, False, False), file_path("Weapon", not is_description_first, False, is_japanese), file_path("Weapon", False, True, False)])
+    if(not tags or "sorcery" in tags or "incantation" in tags or "key" in tags or "ashes" in tags or "material" in tags or "consumable" in tags):
+        files_list.append([file_path("Goods", is_description_first, False, False), file_path("Goods", not is_description_first, False, is_japanese), file_path("Goods", False, True, False)])
 
     return files_list
 
@@ -49,18 +47,28 @@ def get_files_list(tags, is_description_first, is_japanese):
 #        lookup_file  A string containing the location of another XML file. The corresponding entry in that file will be returned as data
 #        data         An array containing two fields. One for the item name, the other for the item description
 # @return The updated (or not) data
-def find_keywords(keywords, src_file, lookup_file, data):
+def find_keywords(keywords, tags, src_file, lookup_file, tag_file, data):
     # If the item has not been found yet
     if(data[0] == "NULL"):
-        # Parse the first file
+        # Parse the source file
         src_fd = open(path(src_file))
         src_soup = BeautifulSoup(src_fd, "xml")
         entries = src_soup.find("entries")
+
+        # Parse the tags file
+        tag_fd = open(path(tag_file))
+        tag_soup = BeautifulSoup(tag_fd, "xml")
 
         # For each entry in the file
         for tag in entries.find_all("text"):
                 # If the entry contains the keywords
                 if(contains_keywords(simplify(tag.text), keywords)):
+                    # If the entry does not contain the tags, ignore it
+                    if(tags):
+                        tag_list = tag_soup.find(attrs = {"id" : tag["id"]})
+                        if(not contains_keywords(tag_list.text, tags)):
+                            continue
+
                     # Parse the second file and find the corresponding id
                     lookup_fd = open(path(lookup_file))
                     lookup_soup = BeautifulSoup(lookup_fd, "xml")
@@ -100,7 +108,7 @@ def find_item_by_description(args):
     # Search for the item in the files
     item_data = ["NULL", "NULL"]
     for files in file_list:
-        item_embed = find_keywords(keywords, files[0], files[1], item_data)
+        item_embed = find_keywords(keywords, tags, files[0], files[1], files[2], item_data)
 
         # If the item was found, stop searching
         if(item_embed[0] != "NULL"):
@@ -143,7 +151,7 @@ def find_item_by_name(args):
     # Search for the item in the files
     item_data = ["NULL", "NULL"]
     for files in file_list:
-        item_embed = find_keywords(keywords, files[0], files[1], item_data)
+        item_embed = find_keywords(keywords, tags, files[0], files[1], files[2], item_data)
 
         # If the item was found, stop searching
         if(item_embed[0] != "NULL"):
@@ -187,7 +195,7 @@ def find_item_by_name_jp(args):
     # Search for the item in the files
     item_data = ["NULL", "NULL"]
     for files in file_list:
-        item_embed = find_keywords(keywords, files[0], files[1], item_data)
+        item_embed = find_keywords(keywords, tags, files[0], files[1], files[2], item_data)
 
         # If the item was found, stop searching
         if(item_embed[0] != "NULL"):
