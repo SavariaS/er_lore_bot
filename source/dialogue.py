@@ -55,7 +55,7 @@ def find_dialogue(dialogue):
             
             # If it was not found, move on to the next section
             else:
-                section = id
+                section = id - (id % 100) if id < 10000 else id - (id % 1000)
                 text = tag.text + "\n"
     
     # If the dialogue wasn't found, return an error
