@@ -18,7 +18,10 @@ def simplify(string):
     string = string.lower()
 
     # Remove characters
-    string = string.translate(str.maketrans('', '', '.,:()'))
+    string = string.translate(str.maketrans('', '', '.,!:()'))
+
+    # Replace hyphens with whitespaces
+    string = string.replace("-", " ")
 
     # Replace french accents with ASCII character
     string = string.replace("é", "e")

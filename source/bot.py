@@ -58,43 +58,43 @@ async def on_message(message):
     # If the !tags command is entered, show all tags
     if(len(message.content) >= 5 and message.content[:5] == "!tags"):
         embed = show_tags()
-        await message.channel.send(embed = embed)
+        await message.channel.send(embed = embed, reference = message, mention_author = False)
         return
     
     # If the !item-name command is entered...
     elif(len(message.content) >= 11 and message.content[:11] == "!item-name "):
         embed = find_item_by_name(message.content[11:])
-        await message.channel.send(embed = embed)
+        await message.channel.send(embed = embed, reference = message, mention_author = False)
         return
     
     # If the !item-desc command is entered...
     elif(len(message.content) >= 11 and message.content[:11] == "!item-desc "):
         embed = find_item_by_description(message.content[11:])
-        await message.channel.send(embed = embed)
+        await message.channel.send(embed = embed, reference = message, mention_author = False)
         return
 
     # If the !dialogue command is entered...
     elif(len(message.content) >= 10 and message.content[:10] == "!dialogue "):
         embed = find_dialogue(message.content[10:])
-        await message.channel.send(embed = embed)
+        await message.channel.send(embed = embed, reference = message, mention_author = False)
         return
     
     # If the !item-name-jp command is entered
     elif(len(message.content) >= 14 and message.content[:14] == "!item-name-jp "):
         embed = find_item_by_name_jp(message.content[14:])
-        await message.channel.send(embed = embed)
+        await message.channel.send(embed = embed, reference = message, mention_author = False)
         return
     
     # If the !dialogue-jp command is entered...
     elif(len(message.content) >= 13 and message.content[:13] == "!dialogue-jp "):
         embed = find_dialogue_jp(message.content[13:])
-        await message.channel.send(embed = embed)
+        await message.channel.send(embed = embed, reference = message, mention_author = False)
         return
     
     # If the !translate command is entered
     elif(len(message.content) >= 11 and message.content[:11] == "!translate "):
         embed = translate("en", message.content[11:])
-        await message.channel.send(embed = embed)
+        await message.channel.send(embed = embed, reference = message, mention_author = False)
         return
 
     # If the command is unknown
@@ -102,7 +102,7 @@ async def on_message(message):
         # Return an error message
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
         error_embed.description = "'{arguments}' : command not found.\nUse !help for a list of all commands.".format(arguments = message.content.split()[0])
-        await message.channel.send(embed = error_embed)
+        await message.channel.send(embed = error_embed, reference = message, mention_author = False)
         return
 
 # Main
