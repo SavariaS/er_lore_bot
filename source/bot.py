@@ -98,7 +98,7 @@ async def on_message(message):
         return
 
     # If the command is unknown
-    elif(message.content[0] == "!"):
+    elif(message.content[0] == "!" and message.content[1].isalpha()):
         # Return an error message
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
         error_embed.description = "'{arguments}' : command not found.\nUse !help for a list of all commands.".format(arguments = message.content.split()[0])
