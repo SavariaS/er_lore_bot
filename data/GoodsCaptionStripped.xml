@@ -3236,4 +3236,1774 @@ It was once a special weapon of gold and silver intertwined, but is now worn dow
 <text id="9000">A formal bow</text>
 <text id="9001">A stiff bow</text>
 <text id="9002">A reverential bow</text>
+<text id="9003">%null%</text>
+<text id="9004">Wave hand</text>
+<text id="9005">%null%</text>
+<text id="9006">%null%</text>
+<text id="9007">A tough fist gesture</text>
+<text id="9008">%null%</text>
+<text id="9009">Raise morale</text>
+<text id="9010">%null%</text>
+<text id="9011">%null%</text>
+<text id="9012">%null%</text>
+<text id="9013">%null%</text>
+<text id="9014">%null%</text>
+<text id="9015">%null%</text>
+<text id="9016">%null%</text>
+<text id="9017">%null%</text>
+<text id="9018">%null%</text>
+<text id="9019">%null%</text>
+<text id="9020">Pledge on one's sword</text>
+<text id="9021">%null%</text>
+<text id="9022">A threatening gesture</text>
+<text id="9023">An inspiriting gesture</text>
+<text id="9024">%null%</text>
+<text id="9025">%null%</text>
+<text id="9026">%null%</text>
+<text id="9027">Slump to the floor</text>
+<text id="9028">%null%</text>
+<text id="9029">%null%</text>
+<text id="9030">%null%</text>
+<text id="9031">Rest on the floor</text>
+<text id="9032">%null%</text>
+<text id="9033">%null%</text>
+<text id="9034">A dismissive gesture</text>
+<text id="9035">%null%</text>
+<text id="9036">%null%</text>
+<text id="9037">%null%</text>
+<text id="9038">%null%</text>
+<text id="9039">%null%</text>
+<text id="9040">A prayer borne of despair</text>
+<text id="9041">%null%</text>
+<text id="9042">%null%</text>
+<text id="9043">%null%</text>
+<text id="9045">%null%</text>
+<text id="9046">%null%</text>
+<text id="9047">%null%</text>
+<text id="9048">%null%</text>
+<text id="9049">%null%</text>
+<text id="9050">%null%</text>
+<text id="9100">Resting at a site of grace will restore your HP, FP, and cleanse any status ailments.
+It will also refill your sacred flasks.
+
+However, most of the enemies you've defeated will be revived.
+
+You can find sites of grace by going where light converges.</text>
+<text id="9101">You can memorize sorceries and incantations at sites of grace.
+
+You must have a staff equipped to cast sorceries, or a sacred seal equipped to cast incantations.
+Casting sorceries and incantations consumes FP.
+
+<?keyicon@0017?>: <?keyActName@17?></text>
+<text id="9102">Equip a bow to fire arrows.
+You can equip up to two types of arrows to choose from at once.
+
+When wielding a bow with two hands, hold <?keyicon@24?> for precision aiming.
+Use <?keyControlCamera?> to adjust your aim.
+
+<?keyicon@22?>: Fire arrow type 1
+<?keyicon@23?>: Fire arrow type 2
+<?keyicon@24?>: Precision aiming</text>
+<text id="9103">Crouch to make it harder for enemies to discover you.
+Especially effective in tall grass.
+
+Attacking an enemy that hasn't noticed you will cause more damage than usual.
+
+<?keyicon@9?>: <?keyActName@9?></text>
+<text id="9104">Some attacks may break an enemy's stance, giving you a chance to perform a critical hit.
+
+Charge attacks and jump attacks make it particularly easy to break an enemy's stance.
+
+Hold <?keyicon@23?>: Charge attack
+<?keyicon@23?> while jumping: Jump attack</text>
+<text id="9105">Upon dying, you will be revived at the last site of grace that you visited.
+
+However, if there is a Stake of Marika near where you died, you can choose to be revived there instead.</text>
+<text id="9106">You can perform a counterattack immediately after blocking an enemy attack.
+
+Guard counters make it easy to break an enemy's stance.
+
+<?keyicon@23?> immediately after blocking an attack: Guard Counter</text>
+<text id="9107">Use your map to check your current position, as well as the terrain and surrounding structures.
+
+You can update your map with new information by finding Map fragments at steles along the road.
+
+You can also use the map to freely place beacons of light to serve as landmarks as you explore.
+
+<?keyicon@29?>: <?keyActName@29?></text>
+<text id="9108">Grace exists to guide the Tarnished and lead them along the proper path.
+
+Even now, some sites of grace retain that power. Their golden rays will guide you along your way.</text>
+<text id="9109">Use the Spectral Steed Whistle to summon and ride your spectral steed.
+
+If your spectral steed dies, you can summon it again, but it will cost one Flask of Crimson Tears to do so.
+
+You can dismount by using the whistle again or by pressing <?keyicon@0009?>.</text>
+<text id="9110">Upon dying, you will be revived at the last site of grace that you visited.
+
+You will drop any runes in your possession at the site of your death.
+If you die again before reclaiming those runes, they will be lost forever.
+
+The compass at the top of the screen indicates the direction of the lost runes.</text>
+<text id="9111">With a Spirit Calling Bell, you can use ashes to summon various spirits.
+Summoning typically consumes FP.
+
+You can only summon one type of spirit at a time.
+You cannot summon spirits during multiplayer.</text>
+<text id="9112">Use an armament in your left hand or both hands to guard against incoming attacks.
+Guarding is especially effective when done with a shield.
+
+Guarding consumes stamina.
+If your stamina runs out, your stance will be broken.
+
+<?keyicon@24?>: Guard</text>
+<text id="9113">If you have a Crafting Kit, you can make various items from materials that you find.
+
+Select "Item Crafting" from the main menu to make items.
+
+You can learn to craft more items by finding cookbooks.
+
+<?keyicon@28?>: <?keyActName@28?></text>
+<text id="9115">You can find crystal tears at the bases of Minor Erdtrees and elsewhere throughout the Lands Between.
+
+At sites of grace, you can mix two crystal tears in the Flask of Wondrous Physick.
+This will allow you to create elixirs with various custom effects.</text>
+<text id="9116">With a Whetstone Knife, you can use ashes of war to grant your armaments new skills at sites of grace.
+
+An armament can only have one skill.
+Any skill it previously had will be removed.
+
+An armament's type determines what skills it can have. Some special armaments have unique skills and cannot be granted new ones.</text>
+<text id="9117">Use the Birdseye Telescopes in each area to see into the distance like a bird and get a better view of your destination.
+
+<?keyicon@17?>: Zoom in
+<?keyicon@18?>: Zoom out</text>
+<text id="9118">Jump while on horseback near a spiritspring to ride its current high into the air.
+
+You won't take damage from jumping into a spiritspring while on horseback, even from a great height.
+
+<?keyicon@8?> at a spiritspring while on horseback: Spiritspring jump</text>
+<text id="9119">Vanquishing an enemy group will replenish your flasks.
+
+The number and type of flasks to be replenished varies, depending on the enemy group.
+
+You cannot replenish more flasks than your maximum amount allows.</text>
+<text id="9120">There are both Crimson and Cerulean Teardrop Scarabs.
+Defeat them to replenish the flasks that match their type.
+
+However, you cannot replenish more flasks than your maximum amount allows.</text>
+<text id="9121">Use Furlcalling Finger Remedy to reveal summon signs of players from other worlds.
+
+Gold signs indicate an ally.
+Red signs indicate an adversary.
+The multiplayer session will begin once either type has been summoned.
+(You will take the role of the Host of Fingers.)</text>
+<text id="9122">Use Tarnished's Furled Finger to write a gold summon sign.
+
+Cooperative multiplayer will begin once you have been summoned by a player from another world.
+
+You will take the role of an ally (Furled Finger) and your objective is to defeat the area boss.
+
+The compass at the top of the screen indicates the direction of the summoner (Host of Fingers).</text>
+<text id="9123">Use Duelist's Furled Finger to write a red summon sign.
+
+Competitive multiplayer will begin once you have been summoned by a player from another world.
+
+You will take the role of an adversary (Duelist) and your objective is to defeat the Host of Fingers who summoned you.</text>
+<text id="9124">Use Festering Bloody Finger to attempt to invade the world of another player.
+
+The multiplayer session will begin once the invasion succeeds.
+
+You will take the role of an invader (Bloody Finger) and your objective is to defeat the Host of Fingers of that world.
+
+If you stray far from the Host of Fingers, the compass at the top of the screen points to their location.</text>
+<text id="9125">If you use a Blue Cipher Ring, you will make yourself open to summons for rescue from other worlds.
+
+The multiplayer session will begin once you have been summoned as a hunter, and your objective is to defeat the invader of that world.
+
+The compass at the top of the screen indicates the direction of the summoner (Host of Fingers).</text>
+<text id="9126">In each area, you may find effigies of martyrs.
+These effigies are summoning pools.
+
+You'll find it easy to summon other players at these locations, as co-op and hostile summoning signs created with small effigies gather at summoning pools.</text>
+<text id="9127">You must be near a rebirth monument to summon spirits from ashes.
+
+When you are close to a rebirth monument and able to summon, a monument icon will appear on the left side of the screen.</text>
+<text id="9128">If you use a White Cipher Ring, you will automatically request for a hunter from another world to come to your rescue when your world is invaded.
+(Can also be used after you are invaded.)
+
+The hunter will be summoned once the request succeeds, and their objective is to defeat the invader of your world.</text>
+<text id="9129">Armaments have special abilities called skills.
+
+Skills are highly varied, and range from powerful attacks to temporary effects.
+Using skills consumes FP.
+
+<?keyicon@25?>: <?keyActName@25?></text>
+<text id="9130">Through your map, you can instantly travel to any sites of grace that you've discovered.
+
+However, there are some dungeons and other areas where this cannot be done.</text>
+<text id="9131">At a smithing table, you can spend runes and smithing stones to strengthen your armaments.
+
+Somewhere in the Lands Between, you may meet a blacksmith who can make your armaments even stronger.</text>
+<text id="9132">The Roundtable Hold is a place where Tarnished gather, guided by grace. Combat is prohibited on the premises due to a pact of non-aggression.
+(This rule is in effect when the Roundtable icon is displayed.)
+
+The Roundtable Hold is located outside of this world. It can only be reached through sites of grace.
+(Can also be accessed by using the map to travel.)
+
+<?keyicon@29?>: <?keyActName@29?></text>
+<text id="9133">%null%</text>
+<text id="9134">In every corner of the Lands Between, you will find fruits and flowers, mushrooms and butterflies, and various other useful materials.
+
+These materials can be used for item crafting.</text>
+<text id="9135">You will need cracked pots or other containers to craft certain items.
+You will not be able to make more of those items than you have containers.
+
+Containers will be consumed when crafting, but they can be reused when emptied.</text>
+<text id="9136">With a Whetstone Knife, you can use ashes of war to grant affinities to your armaments at sites of grace.
+
+This way, you can alter an armament's attack affinity, boost attribute scaling, and more.
+
+An armament's type determines what affinities it can have. Some special armaments, like those with unique skills, cannot be granted new affinities.</text>
+<text id="9137">From "Pouch" in the main menu, you can equip six items to your pouches.
+
+Four of those items can be used without opening the main menu.
+
+<?keyicon@27?>+<?keyicon@17?>: Use item in Pouch 1
+<?keyicon@27?>+<?keyicon@19?>: Use item in Pouch 2
+<?keyicon@27?>+<?keyicon@20?>: Use item in Pouch 3
+<?keyicon@27?>+<?keyicon@18?>: Use item in Pouch 4</text>
+<text id="9138">You can avoid enemy attacks with a dodge roll or backstep.
+Both of these actions consume stamina.
+
+<?keyicon@3?>+<?keyicon@7?>: Dodge roll
+<?keyicon@7?>: Backstep</text>
+<text id="9140">Each hand can be equipped with up to three armaments, allowing you to toggle between them.
+
+Armaments can also be two-handed, making attacks more difficult to repel with shields and boosting effective strength by 50%.
+
+<?keyicon@19?>: <?keyActName@19?>
+<?keyicon@20?>: <?keyActName@20?>
+<?keyicon@27?>+<?keyicon@24?>/<?keyicon@22?>: Wield with two hands</text>
+<text id="9195">You will need certain items to participate in each type of multiplayer:
+cooperative, invasion, or competitive.
+
+Select "Multiplayer" from the main menu to see your multiplayer items.
+You can also use them directly from this menu.
+
+<?keyicon@28?>: <?keyActName@28?></text>
+<text id="9200">Letter addressed to someone:
+
+Confirmed traces of silvery slime in the
+ruins in front of Stormgate.
+
+Found on the soldiers' camp supplies.</text>
+<text id="9201">Letter addressed to someone:
+
+Traces of silvery slime found on
+Godwyn's Highroad.
+
+Just after until the procession with the
+big coffin passed by.</text>
+<text id="9300">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Bone Arrow
+- Bone Arrow (Fletched)
+- Bone Bolt</text>
+<text id="9301">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Pickled Turtle Neck
+- Poisonbone Arrow
+- Poisonbone Arrow (Fletched)
+- Poisonbone Bolt</text>
+<text id="9302">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Blood Grease
+- Drawstring Blood Grease
+- Bloodbone Arrow
+- Bloodbone Arrow (Fletched)
+- Bloodbone Bolt</text>
+<text id="9303">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Stormwing Bone Arrow</text>
+<text id="9304">Recipe book written by a roaming warrior, chased by someone through the Lands Between.
+Adds more craftable items.
+
+Includes techniques for survival in extreme situations and prolonged battle.</text>
+<text id="9305">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Soft Cotton
+- Stanching Boluses
+- Rainbow Stone Arrow</text>
+<text id="9306">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Cursed-Blood Pot</text>
+<text id="9307">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Sweet Raisin
+- Warming Stone</text>
+<text id="9308">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Bone Great Arrow
+- Bone Great Arrow (Fletched)
+- Bone Ballista Bolt</text>
+<text id="9309">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Frozen Raisin
+- Clarifying Cured Meat
+- Clarifying White Cured Meat</text>
+<text id="9310">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Soap
+- Oil Pot
+- Roped Oil Pot</text>
+<text id="9311">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Glowstone
+- Invigorating Cured Meat
+- Invigorating White Cured Meat</text>
+<text id="9312">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Alluring Pot</text>
+<text id="9313">A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.
+
+Acquire the knowledge to craft the following:
+
+- Holyproof Dried Liver</text>
+<text id="9320">A record of crafting techniques left by an armorer who served the great general Radahn.
+Contains knowledge of dealing with rot; the application of fire in particular.
+
+Acquire the knowledge to craft the following:
+
+- Fire Grease
+- Drawstring Fire Grease
+- Fireproof Dried Liver</text>
+<text id="9321">A record of crafting techniques left by an armorer who served the great general Radahn.
+Contains knowledge of dealing with rot; the application of fire in particular.
+
+Acquire the knowledge to craft the following:
+
+- Firebone Arrow
+- Firebone Arrow (Fletched)
+- Firebone Bolt
+- Neutralizing Boluses</text>
+<text id="9322">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Crystal Dart
+- Spellproof Dried Liver
+- Shattershard Arrow</text>
+<text id="9323">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Volcano Pot
+- Roped Volcano Pot</text>
+<text id="9324">Expands crafting repertoire</text>
+<text id="9325">A record of crafting techniques left by an armorer who served the great general Radahn.
+Contains knowledge of dealing with rot; the application of fire in particular.
+
+Acquire the knowledge to craft the following:
+
+- Giantsflame Fire Pot</text>
+<text id="9326">A record of crafting techniques left by an armorer who served the great general Radahn.
+Contains knowledge of dealing with rot; the application of fire in particular.
+
+Acquire the knowledge to craft the following:
+
+- Redmane Fire Pot</text>
+<text id="9327">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Dappled Cured Meat
+- Dappled White Cured Meat</text>
+<text id="9328">A record of crafting techniques left by an armorer who served the great general Radahn.
+Contains knowledge of dealing with rot; the application of fire in particular.
+
+Acquire the knowledge to craft the following:
+
+- Exalted Flesh</text>
+<text id="9329">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Thawfrost Boluses
+- Stimulating Boluses</text>
+<text id="9330">A record of crafting techniques left by an armorer who served the great general Radahn.
+Contains knowledge of dealing with rot; the application of fire in particular.
+
+Acquire the knowledge to craft the following:
+
+- Preserving Boluses</text>
+<text id="9331">A record of crafting techniques left by an armorer who served the great general Radahn.
+Contains knowledge of dealing with rot; the application of fire in particular.
+
+Acquire the knowledge to craft the following:
+
+- Immunizing Cured Meat
+- Immunizing White Cured Meat</text>
+<text id="9340">A record of crafting techniques left by a glintstone craftsman who served the academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Magic Pot
+- Roped Magic Pot
+- Shield Grease</text>
+<text id="9341">A record of crafting techniques left by a glintstone craftsman who served the academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Cuckoo Glintstone</text>
+<text id="9342">A record of crafting techniques left by a glintstone craftsman who served the academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Magic Grease
+- Drawstring Magic Grease
+- Magicbone Arrow
+- Magicbone Arrow (Fletched)
+- Magicbone Bolt</text>
+<text id="9343">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Rancor Pot</text>
+<text id="9344">A record of crafting techniques left by a glintstone craftsman who served the Academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Academy Magic Pot</text>
+<text id="9345">A record of crafting techniques left by a glintstone craftsman who served the Academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Freezing Grease</text>
+<text id="9346">A record of crafting techniques left by a glintstone craftsman who served the Academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Freezing Pot</text>
+<text id="9347">A record of crafting techniques left by a glintstone craftsman who served the Academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Coldbone Arrow
+- Coldbone Arrow (Fletched)
+- Coldbone Bolt</text>
+<text id="9348">A record of crafting techniques left by a glintstone craftsman who served the Academy.
+Contains information on "faux sorceries," such as they were called.
+
+Acquire the knowledge to craft the following:
+
+- Albinauric Pot</text>
+<text id="9360">A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.
+
+Acquire the knowledge to craft the following:
+
+- Scriptstone
+- Grace Mimic
+- Gold-Pickled Fowl Foot</text>
+<text id="9361">A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.
+
+Acquire the knowledge to craft the following:
+
+- Holy Water Pot
+- Roped Holy Water Pot</text>
+<text id="9362">Expands crafting repertoire</text>
+<text id="9363">A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.
+
+Acquire the knowledge to craft the following:
+- Sacred Order Pot</text>
+<text id="9364">A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.
+
+Acquire the knowledge to craft the following:
+
+- Holy Grease
+- Drawstring Holy Grease
+- Haligbone Arrow
+- Haligbone Arrow (Fletched)
+- Haligbone Bolt</text>
+<text id="9365">A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.
+
+Acquire the knowledge to craft the following:
+
+- Silver-Pickled Fowl Foot</text>
+<text id="9380">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Fetid Pot
+- Roped Fetid Pot</text>
+<text id="9381">Expands crafting repertoire</text>
+<text id="9382">Expands crafting repertoire</text>
+<text id="9383">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Beastlure Pot</text>
+<text id="9384">A record of crafting techniques left by a military perfumer.
+Contains martial techniques beyond the repertoire of an ordinary physician.
+
+Acquire the knowledge to craft the following:
+
+- Spark Aromatic
+- Uplifting Aromatic</text>
+<text id="9385">A record of crafting techniques left by a depraved perfumer.
+Contains perilous techniques no ordinary physician would attempt.
+
+Acquire the knowledge to craft the following:
+
+- Poison Spraymist
+- Bloodboil Aromatic</text>
+<text id="9386">A record of crafting techniques left by a depraved perfumer.
+Contains perilous techniques no ordinary physician would attempt.
+
+Acquire the knowledge to craft the following:
+
+- Ironjar Aromatic</text>
+<text id="9387">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Poison Pot
+- Roped Poison Pot
+- Poisonbone Dart</text>
+<text id="9388">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Poison Grease
+- Drawstring Poison Grease</text>
+<text id="9389">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Rot Pot
+- Rot Grease
+- Drawstring Rot Grease</text>
+<text id="9390">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Rotbone Arrow
+- Rotbone Arrow (Fletched)
+- Rotbone Bolt</text>
+<text id="9391">A record of crafting techniques left by roaming nomad warriors.
+Contains knowledge for surviving in the face of utter scarcity.
+
+Acquire the knowledge to craft the following:
+
+- Swarm Pot
+- Roped Fly Pot</text>
+<text id="9392">A record of crafting techniques left by a depraved perfumer.
+Contains perilous techniques no ordinary physician would attempt.
+
+Acquire the knowledge to craft the following:
+
+- Acid Spraymist</text>
+<text id="9393">A record of crafting techniques left by a
+travelling perfumer who served in the Shattering.
+Expands crafting repertoire.
+
+Acquire the knowledge to craft the following:
+
+-Maddening Boluses</text>
+<text id="9400">A record of crafting techniques taught by the capital's ancient dragon cult.
+Details techniques that harness lightning, the weapon of the ancient dragons.
+
+Acquire the knowledge to craft the following:
+
+- Lightning Grease
+- Drawstring Lightning Grease
+- Lightningbone Arrow
+- Lightningbone Arrow (Fletched)
+- Lightningbone Bolt</text>
+<text id="9401">A record of crafting techniques taught by the capital's ancient dragon cult.
+Details techniques that harness lightning, the weapon of the ancient dragons.
+
+Acquire the knowledge to craft the following:
+
+- Lightning Pot
+- Roped Lightning Pot</text>
+<text id="9402">A record of crafting techniques taught by the capital's ancient dragon cult.
+Details techniques that harness lightning, the weapon of the ancient dragons.
+
+Acquire the knowledge to craft the following:
+
+- Ancient Dragonbolt Pot
+- Lightningproof Dried Liver</text>
+<text id="9403">A record of crafting techniques taught by the capital's ancient dragon cult.
+Details techniques that harness lightning, the weapon of the ancient dragons.
+
+Acquire the knowledge to craft the following:
+
+- Dragonwound Grease</text>
+<text id="9420">A record of crafting techniques left by a man who was utterly captivated by St. Trina. He continued the search for her in his slumber.
+
+Acquire the knowledge to craft the following:
+
+- Sleep Pot</text>
+<text id="9421">A record of crafting techniques left by a man who was utterly captivated by St. Trina. He continued the search for her in his slumber.
+
+Acquire the knowledge to craft the following:
+
+- Bewitching Branch</text>
+<text id="9422">A record of crafting techniques left by a man who was utterly captivated by St. Trina. He continued the search for her in his slumber.
+
+Acquire the knowledge to craft the following:
+
+- Soporific Grease
+- Drawstring Soporific Grease
+- Sleepbone Arrow
+- Sleepbone Arrow (Fletched)
+- Sleepbone Bolt</text>
+<text id="9423">A record of crafting techniques left by a man who, unable to become a Finger Maiden, instead became a missionary, and went forth to spread holy teachings.
+
+Acquire the knowledge to craft the following:
+
+- Rejuvenating Boluses</text>
+<text id="9440">A record of crafting techniques left by those afflicted by the madness of the flame of frenzy.
+Contains techniques discovered in desperation.
+
+Acquire the knowledge to craft the following:
+
+- Clarifying Boluses</text>
+<text id="9441">A record of crafting techniques left by those afflicted by the madness of the flame of frenzy.
+Contains techniques discovered in desperation.
+
+Acquire the knowledge to craft the following:
+
+- Frenzyflame Stone</text>
+<text id="9500">This empty pot somehow mends itself when broken.
+Essential vessel for crafting cracked pot items.
+
+The materials and magics sealed within deploy their effects when the pot is thrown.</text>
+<text id="9501">This empty pot somehow mends itself when broken.
+Special item with greater durability than a cracked pot.
+
+Essential vessel for crafting ritual pot items.
+
+The materials and magics sealed within deploy their effects when the pot is thrown.</text>
+<text id="9510">Glass bottles used by perfumers. Used to seal various scent compounds.
+
+Essential vessel for crafting perfume items.
+
+The art of perfuming was once jealously guarded in the capital, but after the perfumers were drafted into service during the Shattering, the art became widely practiced throughout the Lands Between.</text>
+<text id="10000">Glass shard covered in dirt.
+
+Because it sparkles in the light, it might be mistaken for an object of value when seen from afar.
+
+It cannot produce light by itself. Essentially worthless.</text>
+<text id="10010">A golden seed, found at the base of an illusory tree.
+
+Increases a Sacred Flask's number of uses.
+(Can be used after resting at a site of grace.)
+
+When the Elden Ring was shattered, these seeds flew from the Erdtree, scattering across the various lands, as if life itself knew that its end had come.</text>
+<text id="10020">Blessing of the Erdtree, worshiped in the churches of all lands; this is but a faint vestige.
+
+Increases the potency of a Sacred Flask's restorative effects.
+(Can be used after resting at a site of grace.)
+
+During the age of the Erdtree, these tears were used to spread the faith, for theirs was once a certain blessing.</text>
+<text id="10030">A black, lightly beguiling stone.
+Prized by the sorcerers who produce them.
+
+Increases memory slots.
+
+Said to be a fragment of the black moon that once hung above the Eternal City.</text>
+<text id="10040">Small, withered bag, knitted by hand. Bestowed upon the ruling lord, or those attempting to become lord, by the elderly Finger Reader.
+
+Increases talisman equip slots.
+
+As the voices of the Two Fingers, Finger Readers are said to live lives eternal, and one is even supposed to have served as a wetnurse to royalty.</text>
+<text id="10060">Dragon heart seized by a dragon tracker.
+Riddled with Gravel Stone, this grotesque organ continues to beat vivaciously.
+
+An offering used in the Dragon Communion. Consume a dragon's heart at the altar to make its power yours.
+
+While a terrible and savage-looking thing, the heart has a peculiar beauty to it.</text>
+<text id="10070">Empty ashes of war, devoid of any memories of battle.
+
+Unable to apply any kind of affinity in their current state, but can be used by Smithing Master Hewg of the Roundtable Hold to recreate other ashes.
+
+Thus does the copy pass into becoming the genuine article.</text>
+<text id="10080">Amber egg clutched by Rennala, Queen of the Full Moon.
+Great Rune of unborn demigods.
+
+Perfects those who have been born anew.
+
+Children born anew by Rennala are all frail and short-lived. Imperfect beings, each and all.</text>
+<text id="10100">Stone used to smith a variety of armaments. A shard found in plenty.
+
+Strengthens armaments up to +3.
+
+Smithing stone is found throughout the Lands Between, and mining galleries built to excavate it can be found everywhere.</text>
+<text id="10101">Stone used to smith a variety of armaments. A large shard found in plenty.
+
+Strengthens armaments up to +6.
+
+Smithing stone is found throughout the Lands Between, and mining galleries built to excavate it can be found everywhere.</text>
+<text id="10102">Stone used to smith a variety of armaments. A particularly hard specimen.
+
+Strengthens armaments up to +9.
+
+Smithing stone is found throughout the Lands Between, and mining galleries built to excavate it can be found everywhere.</text>
+<text id="10103">Stone used to smith a variety of armaments. A large and particularly hard specimen.
+
+Strengthens armaments up to +12.
+
+Smithing stone is found throughout the Lands Between, and mining galleries built to excavate it can be found everywhere.</text>
+<text id="10104">Stone used to smith a variety of armaments. A rare specimen, it is tinged with gold.
+
+Strengthens armaments up to +15.
+
+Mined near the foot of the Erdtree, these stones are said to have been used to bolster the strength of the Royal forces.</text>
+<text id="10105">Stone used to smith a variety of armaments. A larger rare specimen, it is tinged with gold.
+
+Strengthens armaments up to +18.
+
+Mined near the foot of the Erdtree, these stones are said to have been used to bolster the strength of the Royal forces.</text>
+<text id="10106">Stone used to smith a variety of armaments. Found in a polar region, it is semi-vitrified.
+
+Strengthens armaments up to +21.
+
+Thought to have been used to hone the weapons of the champions of the War against the Giants at the birth of the Erdtree.</text>
+<text id="10107">Stone used to smith a variety of armaments. Found in a polar region, it is semi-vitrified.
+
+Strengthens armaments up to +24.
+
+Thought to have been used to hone the weapons of the champions of the War against the Giants at the birth of the Erdtree.</text>
+<text id="10140">Smithing stone made by polishing a golden Gravel Stone. A scale of the Ancient Dragonlord, and hidden treasure of Farum Azula.
+
+Strengthens armaments to +25.
+
+The Ancient Dragonlord's seat is said to lie beyond time. This stone lightly twists time, allowing the creation of a weapon capable of slaying a god.</text>
+<text id="10160">Shard of smithing stone drained of color.
+
+Strengthens special armaments to +1.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10161">Large shard of smithing stone drained of color.
+
+Strengthens special armaments to +2.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10162">Hard smithing stone drained of color.
+
+Strengthens special armaments to +3.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10163">Large hard smithing stone drained of color.
+
+Strengthens special armaments to +4.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10164">Gold smithing stone drained of color.
+
+Strengthens special armaments to +5.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10165">Large gold smithing stone drained of color.
+
+Strengthens special armaments to +6.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10166">Polar smithing stone drained of color.
+
+Strengthens special armaments to +7.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10167">Large polar smithing stone drained of color.
+
+Strengthens special armaments to +8.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10168">Ancient dragonrock smithing stone drained of color. A scale of the Ancient Dragonlord, and hidden treasure of Farum Azula.
+
+Strengthens special armaments to +10.
+
+The Ancient Dragonlord's seat is said to lie beyond time. This stone lightly twists time, allowing the creation of a weapon capable of slaying a god.</text>
+<text id="10200">Ancient smithing stone drained of color.
+
+Strengthens special armaments to +9.
+
+Special armaments with unique characteristics cannot be strengthened with colored smithing stones. Number of steps and amount strengthened differ from standard equipment.</text>
+<text id="10900">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +1.
+
+The art of strengthening ashes is known as spirit tuning. Only a spirit tuner may perform this deed.</text>
+<text id="10901">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +2.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10902">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +3.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10903">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +4.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10904">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +5.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10905">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +6.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10906">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +7.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10907">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +8.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10908">White flower that blooms in catacombs.
+Each a soundless bell used to summon spirits.
+
+Strengthens ashes to +9.
+
+Spirit tuning is not merely the simple act of imbuing strength. It is an art that lies somewhere between tuning an instrument and conducting a conversation, leaving both parties enriched.</text>
+<text id="10909">White flower that blooms in catacombs.
+An especially large specimen.
+
+Strengthens ashes to +10.
+
+Since times of old, large gloveworts were used to comfort heroic spirits. Given in tribute to those who died the most glorious of deaths, in the hope their stories would become legend.</text>
+<text id="10910">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +1.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10911">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +2.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10912">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +3.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10913">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +4.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10914">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +5.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10915">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +6.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10916">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +7.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10917">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +8.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10918">White flower that blooms in catacombs.
+A spirit nestles close to it.
+
+Strengthens renowned ashes to +9.
+
+Ashes which keep their renown even after death cannot be strengthened by merely corporeal glovewort.</text>
+<text id="10919">White flower that blooms in catacombs.
+A spirit nestles close to this grand specimen
+
+Strengthens renowned ashes to +10.
+
+Since times of old, large gloveworts were used to comfort heroic spirits. Given in tribute to those who died the most glorious of deaths, in the hope their stories would become legend.</text>
+<text id="11000">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily raises one's maximum HP.</text>
+<text id="11001">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily raises one's maximum stamina.</text>
+<text id="11002">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction restores half of one's maximum HP.</text>
+<text id="11003">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction restores half of one's maximum HP.</text>
+<text id="11004">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction restores half of one's maximum FP.</text>
+<text id="11005">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction restores half of one's maximum FP.</text>
+<text id="11006">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily raises all resistances and heals all status ailments.</text>
+<text id="11007">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction automatically heals one's HP in the moment before death.
+
+However, this effect only occurs once, and will expire after a certain duration.</text>
+<text id="11008">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+Provides significant damage negation.
+
+However, this effect only occurs once, and will expire after a certain duration.</text>
+<text id="11009">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction gradually restores one's HP over time.</text>
+<text id="11010">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts stamina recovery speed.</text>
+<text id="11011">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts all forms of damage negation.</text>
+<text id="11012">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+Temporarily reduces equipment load.</text>
+<text id="11013">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction makes consecutive attacks grow stronger the longer they continue. However, the effect lasts only for a short time.</text>
+<text id="11014">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction increases the power of charged attacks for a certain duration.</text>
+<text id="11015">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction increases the effectiveness of dodge rolls for a certain duration. However, damage taken is also increased during the concoction's effect.</text>
+<text id="11016">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+Causes the resulting concoction to explode.
+
+A defective crystal tear which possesses absolutely no medicinal qualities. A lesson said to be learned the hard way for some; faith can be a volatile matter, after all.</text>
+<text id="11017">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+Causes the resulting concoction to explode.
+
+A defective crystal tear which possesses absolutely no medicinal qualities. A lesson said to be learned the hard way for some; faith can be a volatile matter, after all.</text>
+<text id="11018">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts one's poise.</text>
+<text id="11019">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction prevents one's runes from being lost upon death. However, the effect lasts only for a short time.</text>
+<text id="11020">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction converts incoming damage into recovered HP instead. However, physical damage cannot be converted.
+
+This effect is only brief and will quickly expire.</text>
+<text id="11021">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts one's strength.</text>
+<text id="11022">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts one's dexterity.</text>
+<text id="11023">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts one's intelligence.</text>
+<text id="11024">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts one's faith.</text>
+<text id="11025">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction eliminates all FP consumption.
+
+However, this effect is only brief and will quickly expire.</text>
+<text id="11026">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction makes one's attacks more likely to break enemy stances. However, the effect lasts only for a short time.</text>
+<text id="11027">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction purifies the curse from Mohg, Lord of Blood's terrifying rite of blood.</text>
+<text id="11028">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts the power of one's fire attacks.</text>
+<text id="11029">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts the power of one's magic attacks.</text>
+<text id="11030">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts the power of one's lightning attacks.</text>
+<text id="11031">A crystal tear formed slowly over the ages where the Erdtree's bounty falls to the ground.
+
+Can be mixed in the Flask of Wondrous Physick.
+The resulting concoction temporarily boosts the power of one's holy attacks.</text>
+<text id="15000">A slice of thinly carved beast flesh.
+Material used for crafting items.
+Found by hunting herbivorous beasts.
+
+The dried meat toughens the constitution.</text>
+<text id="15010">The fresh liver of a beast; a luscious fruit of life.
+Material used for crafting items.
+Found by hunting herbivorous beasts.
+
+Dried liver boosts damage negation.</text>
+<text id="15020">A lump of beast flesh filled with rich juices.
+Material used for crafting items.
+Found by hunting carnivorous beasts.
+
+Meat suitable for a rustic feast.</text>
+<text id="15030">Fresh beast blood, glinting with gold.
+Material used for crafting items.
+Found by hunting carnivorous beasts.
+
+This glimmering blood never rots or decays.</text>
+<text id="15040">A rarely-seen specimen of beast fang.
+Material used for crafting items.
+Found by hunting carnivorous beasts.
+
+These multiple, overlapping fangs grow from a single root. Perhaps they're a vestige of the primordial crucible.</text>
+<text id="15050">A rarely-seen specimen of a young, budding horn.
+Material used for crafting items.
+Found by hunting herbivorous beasts.
+
+This horn began to sprout on a beast that typically bears no horn. Perhaps it's a vestige of the primordial crucible.</text>
+<text id="15060">Flight feather of birds.
+
+Material used for crafting items.
+
+Commonly used for arrow fletchings.</text>
+<text id="15070">Rarely-seen dark plumage found
+inside the wing.
+
+Material used for crafting items.
+
+Death's bearers were once said to have
+taken the form of birds, symbolized
+by these black feathers.</text>
+<text id="15080">A four-toed fowl's foot.
+Material used for crafting items.
+
+In the Lands Between, having three digits is seen as a bad omen. As such, the four-toed fowl's foot is a gift of great luck indeed.</text>
+<text id="15090">A splendid, lengthy cut of turtle neck meat.
+Material used for crafting items.
+
+Considered an especially nutritious ingredient In the south of the Lands Between.</text>
+<text id="15100">Fragment of bone with dun mottling.
+Material used for crafting items.
+Found by hunting Those Who Live in Death.
+
+Lamentably brittle, it crumbles at the lightest caress.</text>
+<text id="15110">Head of a large dragonfly.
+Material used for crafting items.
+
+Long believed to have the ability to neutralize poisons.</text>
+<text id="15120">Owl eggs that will never hatch.
+Material used for crafting items.
+
+Prized as a symbol of the most sublime slumber.</text>
+<text id="15130">Eggs of large crabs which dwell in the shallows.
+Material used for crafting items.
+
+A nutritious foodstuff that warms from within.
+The flavor is exquisite.
+Only those of comfort and means know the truth:
+a crab's eggs are more delectable than its meat.</text>
+<text id="15140">Puffy, milky white ovary of a land octopus.
+Material used for crafting items.
+
+Land octopuses eat humans in order to bear young, and theirs is the blood that runs through these ovaries.</text>
+<text id="15150">Pollen from a man-eating miranda flower.
+Material used for crafting items.
+
+Throughout history, perfumers have prized this extremely fragrant form of miranda pollen, not yet scattered into the air.</text>
+<text id="15160">Thin strips of flesh taken from a bloodless creature.
+Material used for crafting items.
+
+The dried meat toughens the constitution, boosting resistance. It's known for its long-lasting effect.</text>
+<text id="15310">Someone's excrement. It has a golden tinge.
+Material used for crafting items.
+
+Gold-tinged excrement is a highly stable substance; it doesn't dry out, nor does it lose its customary warmth or scent. For better or for worse, it remains as it is.</text>
+<text id="15340">Thin, hard beast bones.
+Material used for crafting items.
+Found by hunting beasts.
+
+Commonly used to make disposable weapons.</text>
+<text id="15341">Thick, solid beast bones.
+Material used for crafting items.
+Found by hunting particularly large beasts.
+
+Commonly used to make disposable weapons.</text>
+<text id="15390">Unremarkable glintstone, found along roadways everywhere.
+Material used for crafting items.
+
+Though too impure to use as a permanent catalyst for glintstone sorcery, it's just about sufficient for crafting disposable sorcerous items.</text>
+<text id="15400">Boasting no special qualities, this is merely a goodly length of string.
+
+Material used for crafting items.
+Often carried by demi-humans.
+
+Used to make certain items easier to use.</text>
+<text id="15410">A fragment of a living jar,
+hardened after its death.
+Material used for crafting items.
+
+Such fragments command a high price due to the magical power locked within. This leaves the living jars unfortunate targets for poachers.</text>
+<text id="15420">The thick, coagulated blood of the Albinaurics.
+Material used for crafting items.
+
+Albinaurics are lifeforms made by human hands.
+Thus, many believe them to live impure lives, untouched by the Erdtree's grace.</text>
+<text id="15430">A feather from a hawk that lived as one
+with the storms.
+Material used for crafting items.
+
+These feathers, enveloped in swirling winds, are often used for arrow fletching.</text>
+<text id="20650">Flower that grows in toxic terrain.
+Material used for crafting items.
+
+Dripping with a deep-green poisonous liquid.</text>
+<text id="20651">A light-purple water lily that is on the verge of wilting.
+Material used for crafting items.
+Exceedingly rare to find.
+
+A symbol of faith in St. Trina.
+Dulls the senses, preventing agitation.</text>
+<text id="20652">Yellow flower that grows in lightning-struck lands.
+Material used for crafting items.
+
+Imbued with traces of lightning's essence.</text>
+<text id="20653">A delicate water lily of unalloyed gold that has started to fade and wilt.
+Material used for crafting items.
+Exceedingly rare to find.
+
+A flower signifying faith in the Haligtree.
+Thought to be beloved by the Empyrean Miquella in his youth.</text>
+<text id="20654">A purple flower than blooms in graveyards.
+Material used for crafting items.
+
+The hue of ghostflame, it's believed to be useful in calling forth spirits.</text>
+<text id="20660">An Erdleaf flower that has faded to a pale scarlet, found blooming in rotten lands.
+Material used in crafting items.
+
+Said to be fed by leaves that fell from the Erdtree in days of antiquity.</text>
+<text id="20680">A dusky yellow flower that has started to fade to brown, found throughout the Lands Between.
+Material used for crafting items.
+
+Said to be fed by leaves that fell from the Erdtree in days of antiquity.</text>
+<text id="20681">A golden-tinged flower from a succulent plant that blooms on the Altus Plateau.
+Material used for crafting items.
+
+Said to be a funereal flower in an era long past, before the Erdtree grew.</text>
+<text id="20682">A half-ashen and smoldering flower that blooms on the Mountaintops of the Giants.
+Material used for crafting items.
+
+Fertilized by the sparks from the forge at the peak where burns the flame of ruin.</text>
+<text id="20683">A golden sunflower that grows facing the Erdtree.
+Material used for crafting items.
+Found near Minor Erdtrees.
+
+At the foot of the Erdtree, they retain their color, along with a powerful holy essence.</text>
+<text id="20685">A large flower that blooms facing the Erdtree.
+Material used for crafting items.
+Found near Minor Erdtrees.
+
+Though wilted and faded, it still retains holy essence.</text>
+<text id="20690">Evergreen leaves that give off a faint light.
+Material used for crafting items.
+
+This very common medicinal plant can be found in thickets and elsewhere.</text>
+<text id="20691">Dark red leaves with thick, swollen veins.
+Material used for crafting items.
+Exceedingly rare to find.
+
+A faint pulse can be felt in the veins.
+Stirs the blood, providing an enlivening effect.</text>
+<text id="20710">A herb that grows in the false night
+in and around the Eternal City.
+Material used for crafting items.
+
+Soaked in arcane dew, it gives off the faint glow of starlight.</text>
+<text id="20720">Berry-like red fruits that grow in shrubs.
+Material used for crafting items.
+
+Easily found everywhere in the Lands Between, it has a wide variety of uses.</text>
+<text id="20721">A Rowa fruit tinted with gold.
+Material used for crafting items.
+
+Easily found near the Erdtree.</text>
+<text id="20722">A berry-like fruit, thought to be the original strain of Rowa.
+Material used for crafting items.
+Found in frigid highlands.
+
+This hardy species takes root even when frozen solid.</text>
+<text id="20723">Blood-slick roses that bloom in blood-soaked soil.
+Material used for crafting items.
+
+Particularly beloved by those who serve the Lord of Blood. Glory to his inevitable reign.</text>
+<text id="20740">A shrub fruit bursting with ripened pulp.
+Material used for crafting items.
+
+Grown in lands afflicted by frenzy, it's used for its pain-relieving properties... Though it's also known to be a dangerous intoxicant.</text>
+<text id="20750">A young plant, crystalized before it could mature.
+Material used for crafting items.
+
+Widely found in Liurnia Lake.</text>
+<text id="20751">A young plant, frozen into a crystal before it could mature. Material used for crafting items.
+
+Widely found in cold regions.</text>
+<text id="20753">An immature bud containing fresh blood.
+Material used for crafting items.
+
+Believed to originate long ago from a strain of buds cultivated with youthful, sacramental blood.</text>
+<text id="20760">A fungal growth that thrives in damp thickets and elsewhere. Material used for crafting items.
+
+Its thick, spongy flesh makes it a key component in throwing pots.</text>
+<text id="20761">A mushroom that grows in the false night in and around the Eternal City.
+Material used for crafting items.
+
+It drips with a viscous fluid that behaves much like oil.</text>
+<text id="20770">A mushroom covered in toxic mold that grows in rotten lands. Material used for crafting items.
+
+A skilled hand can repurpose its toxic mold into an effective ward against scarlet rot.</text>
+<text id="20775">Resin secreted from the roots of the Greattree.
+Can also be found near trees on the surface.
+Material used in crafting items.
+
+The roots of the Greattree were once linked to those of the Erdtree, or so they say, and it is for this reason catacombs are built around Greattree roots.</text>
+<text id="20780">A cracked, impure, degraded, and altogether
+unremarkable crystal.
+Material used for crafting items.
+
+Widely found in crystal tunnels.</text>
+<text id="20795">A rare piece of stone fragment found near places where ruins have fallen from the sky.
+Material used for crafting items.
+
+It feeds and strengthens the light as it shines.</text>
+<text id="20800">An arcane butterfly with translucent wings.
+Material used for crafting items.
+Exceedingly rare to find.
+
+This butterfly appears as if it's just emerged
+from its cocoon for its entire life.</text>
+<text id="20801">A butterfly with withered, scarlet wings
+found in the Swamp of Aeonia.
+Material used for crafting items.
+
+According to myth, these butterflies were
+once the wings of the Goddess of Rot herself.</text>
+<text id="20802">An eternally burning butterfly found near wildfires and elsewhere. Material used for crafting items.
+
+Serves as the kindling for a number of items.</text>
+<text id="20810">Firefly that gives off a silvery light.
+Material used in crafting items.
+Found near bodies of cold water untouched by sunlight.
+
+The light of fireflies is believed to have an alluring magic. Silver light is considered to invite riches.</text>
+<text id="20811">Firefly that gives off a golden light.
+Material used in crafting items.
+Found near bodies of water close to Minor Erdtrees.
+
+The light of fireflies is believed to have an alluring magic. Golden light is considered to invite runes.</text>
+<text id="20812">A firefly whose glowing tail has hardened into
+glintstone, widely found in Liurnia Lake.
+Material used for crafting items.
+
+Alas, now that its tail is glintstone,
+it can no longer beguile potential mates.</text>
+<text id="20820">The golden, desiccated remains of a centipede.
+Material used for crafting items.
+
+Kept as a fetish by Golden Order fundamentalists, especially the hunters of Those Who Live in Death.
+As such, they're found near churches and similar.</text>
+<text id="20825">A hardened husk shed by a formless life form known as the Silver Tear, found in and around the Eternal City.
+Material used for crafting items.
+
+The Silver Tear makes mockery of life, reborn again and again into imitation.
+Perhaps, one day, it will be reborn a lord...</text>
+<text id="20830">Someone's excrement. It has a golden tinge.
+Material used for crafting items.
+Often hidden in woods and thickets.
+
+Gold-tinged excrement is a highly stable substance; it doesn't dry out, nor does it lose its customary warmth or scent. For better or for worse, it remains as it is.</text>
+<text id="20831">The bloody excrement of a carnivorous beast.
+Material used for crafting items.
+Found in the land of the new dynasty.
+
+Mixed inside with half-digested flesh are dense colonies of tiny eggs of unknown but assuredly revolting origin.</text>
+<text id="20840">Faintly luminescent moss that grows in dark caves.
+Material used in crafting items.
+
+A fundamental ingredient for medicinal boluses.</text>
+<text id="20841">Faintly luminescent moss that grows in dark caves,
+speckled with tiny, yellow flowers.
+Material used for crafting items.
+
+It is primarily used in perfumes.</text>
+<text id="20842">Faintly luminescent moss that grows in dark caves,
+laced with fine crystals.
+Material used for crafting items.
+
+Among the mosses, it possesses unique medicinal properties.</text>
+<text id="20845">An ember taken from the eye socket of a corpse.
+Material used for crafting items.
+
+A sign that the deceased suffered from the flame of frenzy. This grape has ripened and burst.</text>
+<text id="20850">A smoldering rock containing hot gas.
+Material used for crafting items.
+
+Found on Mt. Gelmir.</text>
+<text id="20852">Rock formed from solidified giant ant venom. Highly acidic. Material used for crafting items.
+
+Found near Ainsel River and other places where giant ants live.</text>
+<text id="20855">A small clump of sharp, pointed stones.
+Material used for crafting items.
+
+Such compound stones, found in lands once beset by ancient dragons, are said to be the scales of those very beasts.</text>
+<text id="200000">Legendary ashen remains.
+Use to summon the spirit of Black Knife Tiche.
+
+Tiche was one of the assassins who, on the night of the plot, imbued her black knife with the Rune of Death and slew Godwyn the Golden. She was the daughter of the Black Knife Ringleader, Alecto, and was killed protecting her mother during their flight from the royal capital.</text>
+<text id="201000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Oleg, the Banished Knight.
+
+One of the two knights known as the Wings of the Storm. After his banishment, he attracted the notice of the Grace-Given Lord and later, having slain a hundred traitors as the Lord's hand, Oleg earned the hero's honor of Erdtree Burial.</text>
+<text id="202000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Engvall, the Banished Knight.
+
+One of the two knights dubbed the Wings of the Storm. Despite his banishment, he rejected the invitation of the Grace-Given Lord, instead keeping watch over a masterless castle for many years, gaining renown as a hero of the fringes.</text>
+<text id="203000">Ashen remains in which spirits yet dwell.
+Use to summon two fanged imp spirits.
+
+These spirits are well suited to causing a disturbance, moving nimbly like pests and hurling magic pots.
+The two imps seem fond of each other's company.</text>
+<text id="204000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Latenna the Albinauric.
+
+A rare case of one who chose to become a spirit voluntarily.
+
+Latenna was renowned as a deft magic archer. But having lost her beloved wolf companion, Lobo, she cannot move from the place where she was summoned.</text>
+<text id="205000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a nomad.
+
+A member of a tribe that was entombed in the earth so as to bury the maddening disease that followed them. Able to emit the terrible flame of frenzy from his eyes, but has low HP and is frail, unable to take much in the way of punishment.</text>
+<text id="206000">An old puppet crafted in the Eternal City.
+Use to summon the spirits of a nightmaiden and a swordstress.
+
+These sisters, members of a cold-blooded race who wield flowing weapons, became puppets of their own volition.</text>
+<text id="207000">Legendary ashen remains.
+Use to summon the spirit of a mimic tear.
+Summoning consumes HP rather than FP.
+
+This spirit takes the form of the summoner to fight alongside them, but its mimicry does not extend to imitating the summoner's will.
+Mimic tears are the result of an attempt by the Eternal City to forge a lord.</text>
+<text id="208000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a Crystalian.
+
+Spirit that wields round crystalline blades, both big and small. Its sturdy body, itself hewn from crystal long ago, is hard enough to blunt its opponent's blades, but blows from bludgeoning weapons can shatter it easily.</text>
+<text id="209000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of an ancestral follower.
+
+A spirit of the horned folk who eschew letters and metalworking. Brawny, and versed in distinctive spiritual arts, this particular tribesman wields a heavy bow.</text>
+<text id="210000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a winged misbegotten.
+
+A spirit with the aspect of wings which takes flight to loose arrows from its bow. The misbegotten are held to be a punishment for making contact with the Crucible, and from birth they are treated as slaves, or worse.</text>
+<text id="211000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two Albinaurics.
+
+A strapping duo of cartwheeling spirits who wield ripple swords and spew freezing breath.
+Both are second-generation Albinaurics, with dumpy heads that resemble those of frogs.</text>
+<text id="212000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two skeletal militiamen.
+
+These are the spirits of militiamen who live in Death, and will continue to rise again until properly finished off.
+This is the grotesque fate of those who come into contact with Deathroot.</text>
+<text id="213000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a skeletal bandit.
+
+This is the spirit of a bandit who lives in Death, and will continue to rise again until properly finished off.
+After the night of the plot, Deathroot appeared in the Lands Between, and Those Who Live in Death soon followed.</text>
+<text id="214000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of four Oracle Envoys.
+
+Spirits of a monstrous band of musicians who employ sacred arts. It is said that when Oracle Envoys appear, playing their pipes, they do so to herald the arrival of a new god, or a new age.</text>
+<text id="215000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of four putrid corpses.
+
+These spirits appear some distance from the summoner. Though their movements are dull and confused, their low moans make them effective at drawing the attention of enemies. True death does not come easily for them.</text>
+<text id="216000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Carmaan, the depraved perfumer.
+
+Depraved perfumers practice their art for themselves alone. Carmaan was a notably formidable perfumer whose strength rivaled that of heroes, and it is said that he was in search of a secret physick of revivification.</text>
+<text id="217000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Tricia, the perfumer.
+
+Tricia was once known as a healer who dedicated her efforts to treating Misbegotten, Omen, and all those seen as impure. When her efforts failed, she was their companion as they died, watching over them to ensure that they could pass peacefully, free of pain.
+
+A tale akin to the origins of the deathbed companions.</text>
+<text id="218000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a glintstone sorcerer.
+
+Spirit of a Raya Lucaria sorcerer wearing a stone crown.
+A scholar of the Olivinus Conspectus, who has mastered the use of the Glintstone Stars sorcery.</text>
+<text id="219000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a Twinsage sorcerer.
+
+Spirit of a Raya Lucaria sorcerer wearing a stone crown.
+Those who study the Twinsage Conspectus are the academy's elite, capable of mastering the Glintstone Cometshard and Crystal Burst sorceries.</text>
+<text id="220000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a page.
+
+Spirit of a page who traveled at the side of the noble he served. Uses a piercing sword and crossbow to defend his master.
+One becomes a page merely by accident of being born into obscurity; nothing is asked of ability, talent, or volition.</text>
+<text id="221000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Battlemage Hugues.
+
+Hugues came from Sellia to study the Haima Conspectus at the academy, where he became a battlemage.
+Haima scholars seek to quell conflict with cannon fire and the gavel, but Hugues developed a longing for it.</text>
+<text id="222000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two claymen.
+
+Bowed with age, these spirits are sluggish but hard to stagger.
+The warped remains of priests who searched for revelation in service of the ancient dynasty, they employ two sorceries that produce smaller and larger bubbles.</text>
+<text id="223000">Legendary ashen remains.
+Use to summon the spirit of the Cleanrot Knight Finlay.
+
+Finlay was one of the few survivors of the Battle of Aeonia, who in an unimaginable act of heroism carried the slumbering demigod Malenia all the way back to the Haligtree. She managed the feat alone, fending off all manner of foes along the way.</text>
+<text id="224000">Ashen remains in which spirits yet dwell.
+Use to summon a spirit of the Kindred of Rot.
+
+This spirit takes the form of a crawling pest, its chitinous body making a dry rustling sound.
+Attacks enemies by secreting sticky threads.
+The Kindred of Rot are the servants of the Goddess of Rot—servants that have been forsaken.</text>
+<text id="225000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two marionette soldiers.
+
+Spirits of marionette soldiers created to serve a sorcerer.
+These marionettes are archers, each equipped with a pair of bows.
+On the verge of falling apart, they are ill-disciplined and attack without warning.</text>
+<text id="226000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two avionette soldiers.
+
+Spirits of marionette soldiers with avian features that were created to serve a sorcerer.
+Equipped with long-hafted scythes, they also attack from the skies by lobbing fire pots.
+Can sometimes malfunction when damaged.</text>
+<text id="227000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a Fire Monk.
+
+Spirit of a stout monk who monitored the Giants' Flame. Versed in fire incantations, and himself steeled against fire.
+Though he was charged with keeping watch over the Flame, after many years of solemn duty, he has succumbed to its allure.</text>
+<text id="228000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Amon, the Blackflame Monk.
+
+Amon swore fealty to the god-slaying black flame, and so became the first fire monk to turn traitor.
+Or perhaps it is better said that he fled from the Giants' Flame—out of cowardice.</text>
+<text id="229000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a man-serpent.
+
+Spirit of a deformed man-serpent that wields a whip of magma.
+It is said that long ago, the elder serpent that dwelled on Mt. Gelmir devoured a demigod, and the birth of the man-serpents followed.</text>
+<text id="230000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two Azula beastmen.
+
+Spirits of beastmen from doomed Farum Azula, the slowly crumbling ruins in the skies. These ruins are said to be the remains of a giant mausoleum enshrining an ancient dragon, guarded by chosen beastmen who wield weapons clad in lightning.</text>
+<text id="231000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a Kaiden sellsword.
+
+Spirit of a mercenary belonging to a horse-riding folk. Skillfully uses a massive blade made for dismounting other riders, and enhances his already considerable strength with war cries.
+The sellswords of Kaiden made their prowess known on countless battlefields.</text>
+<text id="232000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of three lone wolves.
+
+Spirits of wolves chased from their pack. They later encountered a nameless Tarnished, who welcomed them as hunting companions.
+The wolf spirits overwhelm enemies with their agility, aiding the summoner in combat.</text>
+<text id="233000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of three giant rats.
+
+Spirits that do not require FP to summon.
+The rat spirits appear at a distance from the summoner, swarming upon their victim to start the fight.
+Even as spirits, these vermin seem to multiply endlessly. Enhancing these ashes can increase their numbers.</text>
+<text id="234000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of five demi-humans.
+
+Spirits of demi-humans that are small in stature, but have a violent, brutish disposition. Though they seem somewhat intelligent, when night falls, their blood boils and they become feral.</text>
+<text id="235000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a rotten stray.
+
+Spirit of a stray dog corrupted by the scarlet rot.
+Though it is only a small creature, it is as violent as it is nimble, and its fangs fester with poisonous rot.</text>
+<text id="236000">Ashen remains in which spirits yet dwell.
+Use to summon a spirit jellyfish.
+
+A floating spirit that illuminates its surroundings. 
+Prone to tears, the jellyfish girl searches for her distant home. Will bravely spew poison at foes on her summoner's behalf.
+
+It seems her name is Aurelia.</text>
+<text id="237000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a warhawk.
+
+Spirit of a Stormveil warhawk, the talons of which have been sliced off so that razor-fine swords could be grafted in their place.
+With its lord vanquished, and its wings wounded, the hawk perished as it solemnly gazed at its former home.
+The storm is a warhawk's cradle.</text>
+<text id="238000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Deenh the Stormhawk.
+
+Spirit of a fierce hawk that faithfully rendered lifelong service to the old king of Stormveil long ago, when the true storm raged. Its cries embolden its fellows in battle, and the tempestuous winds that encircle it shred through foes.</text>
+<text id="239000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Floh, the Bloodhound Knight.
+
+Spirit of a Bloodhound Knight they called the Rabid Stray. Will attack without pause immediately after being summoned.
+Floh vowed that there was only one lord he would serve: a true king. And so, the Rabid Stray never found a master.</text>
+<text id="240000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of five wandering nobles.
+
+The spirits of nobles who, after death, now wander the Lands Between. Surely they were in search of something once—but whatever it was has long been forgotten.</text>
+<text id="241000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a noble sorcerer.
+
+Spirit of a nobleman who once asked to be given a place at Raya Lucaria to learn glintstone sorceries.
+His talents were insufficient to be worthy of donning the stone crown, however, and he is only capable of using the most rudimentary sorcery.</text>
+<text id="242000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of three vulgar militiamen.
+
+Spirits of the vulgar militia who wield long-hafted, serrated hatchets. These brutal weapons are particularly effective at causing blood loss to opponents.
+In the Lands Between, the small were scorned, and so they formed their vulgar militia as a means to make a living, albeit in ignominy.</text>
+<text id="243000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of a mad pumpkin head.
+
+Spirit of a mad soldier with a large, brawny physique.
+Though he has stifled his panic within the dark confines of his helmet, he rampages as if driven mad when agitated by bloodshed or the humming of insects.
+This mad soldier is all that is left of a broken gladiator.</text>
+<text id="244000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of three land squirts
+Summoning consumes HP rather than FP.
+
+These spirits appear some distance from the summoner.
+The firm, fleshy tubes of the creatures remain rooted to the spot, spraying poisonous liquid over their surroundings.</text>
+<text id="245000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of five miranda sprouts.
+Summoning consumes HP rather than FP.
+
+Spirits of sweet little miranda flowers, carnivorous blossoms that feed upon human flesh. They creep slowly, scattering toxic pollen.
+Vulnerable to fire—do take care of the little darlings.</text>
+<text id="246000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of three little living jars.
+Summoning consumes HP rather than FP.
+
+These reckless spirits sacrifice themselves to vanquish their summoner's foes, and explode upon death.
+Though their bravery is admirable, their explosions can harm friend as well as foe, and they will also immediately explode on contact with fire.
+
+"Tell the others—tell them how brightly a fire jar burns."</text>
+<text id="247000">Ashen remains in which spirits yet dwell.
+Use to summon the spirit of Omenkiller Rollo.
+
+Spirit of Rollo, known as the first Omenkiller.
+Once a famous perfumer, Rollo imbibed a physick to rid himself of emotion, thus enabling him to enact his nightmarish labor, hunting the Omen.</text>
+<text id="248000">Ashen remains in which spirits yet dwell.
+Use to summon five greatshield soldier spirits.
+
+Spirits of greatshield soldiers who belonged to the Fallen Hawks, a band of soldiers that once explored the Eternal City. Stout defenders with a steady guard.
+Though their methods are somewhat crude, they work well as a squadron, and will attract the attention of enemies or lob ghostflame from the rearguard.</text>
+<text id="249000">Ashen remains in which spirits yet dwell.
+Use to summon three archer spirits.
+
+Spirits of archers who belonged to the Fallen Hawks, a band of soldiers that once explored the Eternal City. Their arrows are imbued with cold ghostflame.
+Though their methods are somewhat crude, they work well as a squadron, firing a hail of arrows in unison at the sound of a war cry.</text>
+<text id="250000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two of Godrick's soldiers.
+
+A duo of spirits, consisting of a wielder of devastating charged hammer attacks in the vanguard and a crossbowman bringing up the rear.
+The soldiers who serve Godrick the Grafted are what remains of the army that fled the royal capital of the Erdtree.</text>
+<text id="251000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of three Raya Lucaria soldiers.
+
+A trio of spirits, consisting of two disposable foot soldiers and their superior.
+The soldiers of Raya Lucaria were also known as the Cuckoos. They were given free rein by the academy to wage war as they pleased, and they were infamous for their rapacious ways.</text>
+<text id="252000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two Leyndell soldiers.
+
+Spirits of soldiers each equipped with a spear and greatshield.
+The soldiers of Leyndell fight their battles defensively. During the Shattering, they were the ramparts that fortified the royal capital.</text>
+<text id="253000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of two of Radahn's soldiers.
+
+Both spirits wield fiery weapons to perform powerful skills. Such is their valor that they will immediately attack after being summoned.
+
+General Radahn's soldiers were all reputed to be masterful warriors, and it was popularly said that the Redmanes knew no weakness.</text>
+<text id="254000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of five mausoleum soldiers.
+
+Spirits of five headless soldiers who confound foes by disappearing and reappearing at will.
+The mausoleum is where the bodies of soulless demigods are lain to rest, and these soldiers followed their masters into Death by severing their own heads from their bodies.</text>
+<text id="255000">Ashen remains in which spirits yet dwell.
+Use to summon the spirits of four Haligtree soldiers.
+
+Spirits of common soldiers who carry the sacred light. When weakened, they explode to deliver a last-ditch attack.
+This was the bitter revelation discovered by the desperate soldiers who awaited the return of their lord to the rotted Haligtree.
+
+May the flash of our deaths guide Miquella's return.</text>
+<text id="256000">Legendary ashen remains.
+Use to summon the spirit of Kristoff, the Ancient Dragon Knight.
+
+Spirit of Kristoff, an honorable knight of Leyndell who was also a devout worshipper of the ancient dragons.
+His skills strike down foes with thunderbolts, the dragons' weapon of choice.
+
+After the First Defense of Leyndell, Kristoff earned the hero's honor of Erdtree Burial for the feat of capturing Godefroy the Grafted.</text>
+<text id="257000">Legendary ashen remains.
+Use to summon the spirit of Ogha, the Redmane Knight.
+
+Spirit of a mighty knight versed in the use of a greatbow.
+A valiant warrior who will attack immediately after being summoned.
+
+The longest-serving member of the Redmane Knights, Ogha studied techniques to manipulate gravity alongside Radahn.
+May use a rain of gravitational arrows in response to a war cry, but only once.</text>
+<text id="258000">Legendary ashen remains.
+Use to summon the spirit of Lhutel the Headless.
+
+Spirit of a headless knight who leads the mausoleum soldiers.
+Wields a lance enrobed in Death and hurls spectral lances at foes.
+
+Lhutel sacrificed her life so that in Death she could continue to protect a soulless demigod until their revival, earning her the hero's honor of Erdtree Burial.</text>
+<text id="259000">One of Seluvis's favorite puppets.
+Use to summon the spirit of Nepheli Loux.
+
+Puppet of a warrior who was betrayed by her pure heart. Wields a Stormhawk Axe in both hands and uses the Thunderstorm skill.
+
+A diamond in the rough, deserving of special care lest its potential be squandered. Nepheli Loux truly was a warrior.</text>
+<text id="260000">One of Seluvis's puppets.
+Use to summon the spirit of the Dung Eater.
+
+Spirit of a man who murdered thousands and defiled their corpses with the Seedbed Curse.
+Wields a spine greatsword and hurls curses.
+
+The Dung Eater despaired at how he met his end.
+How hideous and sinister this puppet is, and yet, its utter despair invites one to care for it.</text>
+<text id="261000">One of Seluvis's puppets.
+Use to summon the spirit of the Finger Maiden Therolina.
+
+Spirit of Finger Maiden who never met the Tarnished she was meant to guide. Uses healing incantations and Holy Water Pots, but she is not a fighter by nature and is ill-suited to battle.
+
+A Maiden without a Tarnished. A Tarnished without a Maiden. And yet no guide to bring them together.</text>
+<text id="262000">One of Seluvis's favorite puppets.
+Use to summon the spirit of Dolores the Sleeping Arrow
+
+Spirit of a handsome archer who dressed in the style of a man. Called the Silent Hunter by some, she fires St. Trina's arrows from her shortbow.
+
+Dolores once belonged to the Roundtable Hold, where she was both a critic and a friend of Gideon the All-Knowing. It was because of her that he and Seluvis went their separate ways.</text>
+<text id="263000">One of Seluvis's puppets.
+Use to summon the spirit of a jarwight
+
+Spirit of a man who wished to become the innards of a living jar. A jar-hurling specialist who throws all manner of pots and jars.
+
+The warrior jar once told the nameless man this:
+"You are not yet ready to join the warriors inside. No, you must apply yourself! Better yourself, and one day I will return for you."</text>
 </entries>
