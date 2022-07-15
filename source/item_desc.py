@@ -47,41 +47,36 @@ def get_files_list(tags, is_description_first, is_japanese):
 #        lookup_file  A string containing the location of another XML file. The corresponding entry in that file will be returned as data
 #        data         An array containing two fields. One for the item name, the other for the item description
 # @return The updated (or not) data
-def find_keywords(keywords, tags, src_file, lookup_file, tag_file, data):
-    # If the item has not been found yet
-    if(data[0] == "NULL"):
-        # Parse the source file
-        src_fd = open(path(src_file))
-        src_soup = BeautifulSoup(src_fd, "xml")
-        entries = src_soup.find("entries")
+def find_keywords(keywords, tags, src_file, lookup_file, tag_file, item_list):
+    # Parse the source file
+    src_fd = open(path(src_file))
+    src_soup = BeautifulSoup(src_fd, "xml")
+    entries = src_soup.find("entries")
 
-        # Parse the tags file
-        tag_fd = open(path(tag_file))
-        tag_soup = BeautifulSoup(tag_fd, "xml")
+    # Parse the tags file
+    tag_fd = open(path(tag_file))
+    tag_soup = BeautifulSoup(tag_fd, "xml")
 
-        # For each entry in the file
-        for tag in entries.find_all("text"):
-                # If the entry contains the keywords
-                if(contains_keywords(simplify(tag.text), keywords)):
-                    # If the entry does not contain the tags, ignore it
-                    if(tags):
-                        tag_list = tag_soup.find(attrs = {"id" : tag["id"]})
-                        if(not contains_keywords(tag_list.text, tags)):
-                            continue
+    # For each entry in the file
+    for tag in entries.find_all("text"):
+            # If the entry contains the keywords
+            if(contains_keywords(simplify(tag.text), keywords)):
+                # If the entry does not contain the tags, ignore it
+                if(tags):
+                    tag_list = tag_soup.find(attrs = {"id" : tag["id"]})
+                    if(not contains_keywords(tag_list.text, tags)):
+                        continue
 
-                    # Parse the second file and find the corresponding id
-                    lookup_fd = open(path(lookup_file))
-                    lookup_soup = BeautifulSoup(lookup_fd, "xml")
-                    match = lookup_soup.find(attrs = {"id" : tag["id"]})
+                # Parse the second file and find the corresponding id
+                lookup_fd = open(path(lookup_file))
+                lookup_soup = BeautifulSoup(lookup_fd, "xml")
+                match = lookup_soup.find(attrs = {"id" : tag["id"]})
 
-                    # Set data to the two entries found
-                    data[0] = tag.text
-                    data[1] = match.text
-
-                    # Exit
-                    break
+                # Set data to the two entries found
+                if(match):
+                    item_list.append([tag.text, match.text])
         
-    return data
+    return item_list
 
 
 # @brief Finds the description of an item.
@@ -106,26 +101,42 @@ def find_item_by_description(args):
     file_list = get_files_list(tags, is_description_first = True, is_japanese = False)
 
     # Search for the item in the files
-    item_data = ["NULL", "NULL"]
+    item_list = []
     for files in file_list:
-        item_embed = find_keywords(keywords, tags, files[0], files[1], files[2], item_data)
-
-        # If the item was found, stop searching
-        if(item_embed[0] != "NULL"):
-            break
-
-    # If an item was found, return it
-    if(item_data[0] != "NULL"):
-        # Create an embed for the item
-        item_embed = discord.Embed(title = item_data[1], type = "rich")
-        item_embed.description = item_data[0]
-        return item_embed
+        item_list = find_keywords(keywords, tags, files[0], files[1], files[2], item_list)
     
     # If no item was found, return an error message
-    else:
+    if(len(item_list) == 0):
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
         error_embed.description = "No item matching '{arguments}' was found.".format(arguments = args)
         return error_embed
+
+    # If only one item was found, return it   
+    if(len(item_list) == 1):
+        # Create an embed for the item
+        item_embed = discord.Embed(title = item_list[0][1], type = "rich")
+        item_embed.description = item_list[0][0]
+        return item_embed
+
+    # If more than one item was found, return a list
+    if(len(item_list) > 1):
+        if(len(item_list) <= 6):
+            desc = ""
+            for item in item_list:
+                desc += item[1] + "\n"
+
+            item_embed = discord.Embed(title = "Disambiguation", type = "rich", colour = 0xFFFF00)
+            item_embed.description = desc
+            return item_embed
+        else:
+            desc = ""
+            for i in range(5):
+                desc += item_list[i][1] + "\n"
+            desc += "... {} more items found.".format(len(item_list) - 5)
+
+            item_embed = discord.Embed(title = "Disambiguation", type = "rich", colour = 0xFFFF00)
+            item_embed.description = desc
+            return item_embed
 
 # @brief Finds the description of an item by its name.
 # @param args  The name of the item to search for. Used as keywords to facilitate the search
@@ -149,26 +160,42 @@ def find_item_by_name(args):
     file_list = get_files_list(tags, is_description_first = False, is_japanese = False)
 
     # Search for the item in the files
-    item_data = ["NULL", "NULL"]
+    item_list = []
     for files in file_list:
-        item_embed = find_keywords(keywords, tags, files[0], files[1], files[2], item_data)
-
-        # If the item was found, stop searching
-        if(item_embed[0] != "NULL"):
-            break
-
-    # If an item was found, return it
-    if(item_data[0] != "NULL"):
-        # Create an embed for the item
-        item_embed = discord.Embed(title = item_data[0], type = "rich")
-        item_embed.description = item_data[1]
-        return item_embed
+        item_list = find_keywords(keywords, tags, files[0], files[1], files[2], item_list)
     
     # If no item was found, return an error message
-    else:
+    if(len(item_list) == 0):
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
         error_embed.description = "No item matching '{arguments}' was found.".format(arguments = args)
         return error_embed
+
+    # If only one item was found, return it   
+    if(len(item_list) == 1):
+        # Create an embed for the item
+        item_embed = discord.Embed(title = item_list[0][0], type = "rich")
+        item_embed.description = item_list[0][1]
+        return item_embed
+
+    # If more than one item was found, return a list
+    if(len(item_list) > 1):
+        if(len(item_list) <= 6):
+            desc = ""
+            for item in item_list:
+                desc += item[0] + "\n"
+
+            item_embed = discord.Embed(title = "Disambiguation", type = "rich", colour = 0xFFFF00)
+            item_embed.description = desc
+            return item_embed
+        else:
+            desc = ""
+            for i in range(5):
+                desc += item_list[i][0] + "\n"
+            desc += "... {} more items found.".format(len(item_list) - 5)
+
+            item_embed = discord.Embed(title = "Disambiguation", type = "rich", colour = 0xFFFF00)
+            item_embed.description = desc
+            return item_embed
 
 
 # @brief Finds the japanese description of an item by its name.
@@ -193,23 +220,39 @@ def find_item_by_name_jp(args):
     file_list = get_files_list(tags, is_description_first = False, is_japanese = True)
 
     # Search for the item in the files
-    item_data = ["NULL", "NULL"]
+    item_list = []
     for files in file_list:
-        item_embed = find_keywords(keywords, tags, files[0], files[1], files[2], item_data)
+        item_list = find_keywords(keywords, tags, files[0], files[1], files[2], item_list)
 
-        # If the item was found, stop searching
-        if(item_embed[0] != "NULL"):
-            break
-
-    # If an item was found, return it
-    if(item_data[0] != "NULL"):
-        # Create an embed for the item
-        item_embed = discord.Embed(title = item_data[0], type = "rich")
-        item_embed.description = item_data[1]
-        return item_embed
-    
     # If no item was found, return an error message
-    else:
+    if(len(item_list) == 0):
         error_embed = discord.Embed(title = "Error", type = "rich", colour = 0xFF0000)
         error_embed.description = "No item matching '{arguments}' was found.".format(arguments = args)
         return error_embed
+
+    # If only one item was found, return it   
+    if(len(item_list) == 1):
+        # Create an embed for the item
+        item_embed = discord.Embed(title = item_list[0][0], type = "rich")
+        item_embed.description = item_list[0][1]
+        return item_embed
+
+    # If more than one item was found, return a list
+    if(len(item_list) > 1):
+        if(len(item_list) <= 6):
+            desc = ""
+            for item in item_list:
+                desc += item[0] + "\n"
+
+            item_embed = discord.Embed(title = "Disambiguation", type = "rich", colour = 0xFFFF00)
+            item_embed.description = desc
+            return item_embed
+        else:
+            desc = ""
+            for i in range(5):
+                desc += item_list[i][0] + "\n"
+            desc += "... {} more items found.".format(len(item_list) - 5)
+
+            item_embed = discord.Embed(title = "Disambiguation", type = "rich", colour = 0xFFFF00)
+            item_embed.description = desc
+            return item_embed
