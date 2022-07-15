@@ -173,6 +173,9 @@ Most of these knights were sent to the fringes, where they were forced to start 
 One of the legendary armaments.
 
 Ranni's sigil is a full moon, cold and leaden, and this sword is but a beam of its light.</text>
+<text id="3100000">Sword wrought from the remains of a god who should have lived a life eternal.
+
+Thoughts on what the weapon portends are many and varied. Some consider it the mark of a great sin, or a sign of great devastation. Some think it as the end of an age, while others; the beginning.</text>
 <text id="3130000">Greatsword patterned after the black steeple of the Helphen, the lampwood which guides the dead of the spirit world.
 
 The lamplight is similar to grace in appearance, only it is said that it can only be seen by those who met their death in battle.</text>
@@ -270,6 +273,10 @@ Can inflict frost upon enemies, and launch its blade with a strong attack. The b
 Made to be easy to wield.
 
 Daubed with gold from tip to tail, it should fetch a good sum.</text>
+<text id="6000000">Ominous piercing sword with a winding blade.
+Carried by the noble servants of the Lord of Blood.
+
+Designed to bore into flesh, causing severe blood loss at the wound. The extracted blood trickles gracefully down the length of the blade.</text>
 <text id="6010000">Elegant piercing sword with a celadon colored blade wielded by Godskin Nobles.
 
 The nobles possess skill with the sword unmatched by any lowborn. Despite its size, successive attacks from this weapon are swifter than the eye can follow.</text>
@@ -317,24 +324,6 @@ The blade is tacky with blood and covered in hefty nicks, making it totally unev
 <text id="7090000">Unique curved sword, notched like a shark's tooth.
 Stubborn bloodstains cling to the blade, which was
 once used to cut the horns from countless Omen.</text>
-<text id="7090200">Unique curved sword, notched like a shark's tooth.
-Stubborn bloodstains cling to the blade, which was
-once used to cut the horns from countless Omen.</text>
-<text id="7090400">Unique curved sword, notched like a shark's tooth.
-Stubborn bloodstains cling to the blade, which was
-once used to cut the horns from countless Omen.</text>
-<text id="7090500">Unique curved sword, notched like a shark's tooth.
-Stubborn bloodstains cling to the blade, which was
-once used to cut the horns from countless Omen.</text>
-<text id="7090700">Unique curved sword, notched like a shark's tooth.
-Stubborn bloodstains cling to the blade, which was
-once used to cut the horns from countless Omen.</text>
-<text id="7090900">Unique curved sword, notched like a shark's tooth.
-Stubborn bloodstains cling to the blade, which was
-once used to cut the horns from countless Omen.</text>
-<text id="7091200">Unique curved sword, notched like a shark's tooth.
-Stubborn bloodstains cling to the blade, which was
-once used to cut the horns from countless Omen.</text>
 <text id="7100000">Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.
 One of the legendary armaments.
 
@@ -360,6 +349,9 @@ A weapon unique to the Onyx Lords, a race of ancients with skin of stone who wer
 <text id="8020000">This curved greatsword wielded by the brawny sellswords of Kaiden combines the blade of a scimitar with the heft of a hatchet.
 
 A difficult to handle weapon that demands much of the wielder's strength and dexterity, but with practice and ability, it can serve as a versatile weapon even on horseback.</text>
+<text id="8030000">Curved greatsword with a gently undulating blade wielded by Bloodhound Knights.
+
+A fearsome blade capable of brutal airborne attacks.</text>
 <text id="8040000">Curved greatsword wielded by Magma Wyrms. The shape resembles a dragon's jaw and is covered in hard scales.
 
 It's said these land-bound dragons were once humans heroes who partook in dragon communion, a grave transgression for which they were cursed to crawl the earth upon their bellies, shadows of their former selves.</text>
@@ -399,6 +391,10 @@ Some claim to have seen wings when the weapon was raised aloft; wings of fierce 
 Deals magic damage.
 
 The blade is weighty, known to deliver slashes of such ferocity that the impact is said to resemble the crash of a falling meteor.</text>
+<text id="9040000">Weapon of Okina, swordsman from the Land of Reeds.
+A cursed weapon that has felled countless men.
+
+When Mohg, the Lord of Blood, first felt Okina's sword, and madness, upon his flesh, he had a proposal, to offer Okina the life of a demon, whose thirst would never go unsated.</text>
 <text id="9060000">Katana forged of glintstone.
 Masterpiece of a Sellian swordsmith.
 
@@ -587,30 +583,6 @@ The dead easily lose their way, and have always been in sore need of a guiding h
 A burial gift devoted to the deaths of heroes.
 Pieces of meat clinging to the blade have
 begun to form into mortuary wax.</text>
-<text id="14130200">Axe of rotted bronze.
-A burial gift devoted to the deaths of heroes.
-Pieces of meat clinging to the blade have
-begun to form into mortuary wax.</text>
-<text id="14130400">Axe of rotted bronze.
-A burial gift devoted to the deaths of heroes.
-Pieces of meat clinging to the blade have
-begun to form into mortuary wax.</text>
-<text id="14130500">Axe of rotted bronze.
-A burial gift devoted to the deaths of heroes.
-Pieces of meat clinging to the blade have
-begun to form into mortuary wax.</text>
-<text id="14130700">Axe of rotted bronze.
-A burial gift devoted to the deaths of heroes.
-Pieces of meat clinging to the blade have
-begun to form into mortuary wax.</text>
-<text id="14130900">Axe of rotted bronze.
-A burial gift devoted to the deaths of heroes.
-Pieces of meat clinging to the blade have
-begun to form into mortuary wax.</text>
-<text id="14131200">Axe of rotted bronze.
-A burial gift devoted to the deaths of heroes.
-Pieces of meat clinging to the blade have
-begun to form into mortuary wax.</text>
 <text id="14140000">Battle axe designed to resemble a hawk, with its wings comprising the blade. Signature weapon of warriors who strive to remain one with the storm, despite being so far from their place of birth.
 
 Their hearts are proud, and thereby easily undone.</text>
@@ -699,6 +671,9 @@ The blade is severely rusted.</text>
 <text id="16160000">Spear fashioned from pure crystal; a deed impossible for a human.
 
 Enwreathed with powerful magic, its attack scales with intelligence. Though festering with scarlet rot, its magic remains potent.</text>
+<text id="17010000">Trident of Mohg, Lord of Blood. A sacred spear that will come to symbolize his dynasty.
+
+As well as serving as a weapon, it is an instrument of communion with an outer god who bestows power upon accursed blood. The mother of truth desires a wound.</text>
 <text id="17020000">Siluria's Tree, weapon of one of the two honored as foremost among the Crucible Knights.
 
 The primordial form of the Erdtree is close in nature to life itself, and this spear, modeled on its crucible, is imbued with ancient holy essence. </text>
