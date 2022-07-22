@@ -8,15 +8,15 @@ This is a [Discord](https://discord.com/) bot that brings up Elden Ring item des
 
 `!tags` Displays the list of all tags.
 
-`!item-name <name>` Finds an item by its name.
+`!item-name <tags> : <name>` Finds an item by its name.
 
-`!item-desc <description>` Finds an item by its description.
+`!item-desc <tags> : <description>` Finds an item by its description.
 
-`!dialogue <lines>` Finds a block of dialogue.
+`!dialogue <author> : <lines>` Finds a block of dialogue.
 
-`!item-name-jp <name>` Finds an item in Japanese by name.
+`!item-name-jp <tags> : <name>` Finds an item in Japanese by name.
 
-`!dialogue-jp <lines>` Finds a block of dialogue in Japanese.
+`!dialogue-jp <author> : <lines>` Finds a block of dialogue in Japanese.
 
 `!translate <text>` Translates text to English.
 

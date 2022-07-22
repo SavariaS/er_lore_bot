@@ -10,9 +10,9 @@ def show_help():
     help_embed.add_field(name = "!tags", value = "Displays the list of all tags.", inline = False)  
     help_embed.add_field(name = "!item-name <tags> : <name>", value = "Finds an item by its name.", inline = False)                       
     help_embed.add_field(name = "!item-desc <tags> : <description>", value = "Finds an item by its description.", inline = False)              
-    help_embed.add_field(name = "!dialogue <lines>", value = "Finds a block of dialogue.", inline = False)                 
+    help_embed.add_field(name = "!dialogue <author> : <lines>", value = "Finds a block of dialogue.", inline = False)                 
     help_embed.add_field(name = "!item-name-jp <tags> : <name>", value = "Finds an item in Japanese by name.", inline = False);        
-    help_embed.add_field(name = "!dialogue-jp <lines>", value = "Finds a block of dialogue in Japanese.", inline = False)  
+    help_embed.add_field(name = "!dialogue-jp <author> : <lines>", value = "Finds a block of dialogue in Japanese.", inline = False)  
     help_embed.add_field(name = "!translate <text>", value = "Translates text to English.", inline = False)
 
     return help_embed
@@ -56,9 +56,10 @@ def show_item_desc():
 # @brief Constructs and returns an embed containing information about the !dialogue command
 # @return The embed
 def show_dialogue():
-    help_embed = discord.Embed(title = "!dialogue <lines>", description = "Finds a block of dialogue.", type = "rich")
+    help_embed = discord.Embed(title = "!dialogue <author> : <lines>", description = "Finds a block of dialogue.", type = "rich")
+    help_embed.add_field(name = "<author> (Optional)", value = "The source of the dialogue.", inline = False)
     help_embed.add_field(name = "<lines>", value = "Keywords to be found within the block of dialogue.", inline = False)
-    help_embed.add_field(name = "Example:", value = "!dialogue never known defeat", inline = False)
+    help_embed.add_field(name = "Example:", value = "!dialogue melina : destined death", inline = False)
 
     return help_embed
 
@@ -75,9 +76,10 @@ def show_item_name_jp():
 # @brief Constructs and returns an embed containing information about the !dialogue-jp command
 # @return The embed
 def show_dialogue_jp():
-    help_embed = discord.Embed(title = "!dialogue-jp <lines>", description = "Finds a block of dialogue in Japanese.", type = "rich")
+    help_embed = discord.Embed(title = "!dialogue-jp <author> : <lines>", description = "Finds a block of dialogue in Japanese.", type = "rich")
+    help_embed.add_field(name = "<author> (Optional)", value = "The source of the dialogue.", inline = False)
     help_embed.add_field(name = "<lines>", value = "English keywords to be found within the block of dialogue.", inline = False)
-    help_embed.add_field(name = "Example:", value = "!dialogue-jp never known defeat", inline = False)
+    help_embed.add_field(name = "Example:", value = "!dialogue-jp melina : destined death", inline = False)
 
     return help_embed
 
